@@ -1,0 +1,47 @@
+# Phase 0, step 5: confirm ncaa.com (via the henrygd/ncaa-api routes) and the ESPN
+# API are not blocked from GitHub-hosted runner IPs. Manual trigger only.
+#
+# Default is a quick probe (one day, ~350 requests, a few minutes). Set `full` to
+# rerun the whole Phase 0 pull from the runner (~40 min of Actions time — free on
+# a public repo).
+name: phase0-coverage
+
+# Read-only token: this workflow only checks out code and uploads an artifact.
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+    inputs:
+      full:
+        description: "Run both full Phase 0 weeks instead of the one-day probe"
+        type: boolean
+        default: false
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run coverage check
+        env:
+          RUNNER_LABEL: github-actions/${{ runner.os }}
+        run: |
+          if [ "${{ inputs.full }}" = "true" ]; then
+            WEEKS="--week 2026-11-16:2026-11-22 --week 2026-01-12:2026-01-18"
+          else
+            WEEKS="--week 2026-11-18:2026-11-18"
+          fi
+          python3 scripts/phase0_coverage.py $WEEKS --out reports/phase0-actions
+      - name: Job summary
+        if: always()
+        run: cat reports/phase0-actions/report.md >> "$GITHUB_STEP_SUMMARY" || echo "No report — source likely blocked from runner IP." >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phase0-coverage-report
+          path: reports/phase0-actions/

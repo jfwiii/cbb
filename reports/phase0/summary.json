@@ -1,0 +1,407 @@
+{
+  "weeks": [
+    {
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "summary": {
+        "d1": {
+          "games_listed": 365,
+          "games_final": 365,
+          "final_score": [
+            365,
+            365
+          ],
+          "box_both": [
+            365,
+            365
+          ],
+          "box_players_both": [
+            353,
+            365
+          ],
+          "totals_match_score": [
+            365,
+            365
+          ],
+          "players_sum_ok": [
+            311,
+            365
+          ],
+          "pbp_any": [
+            365,
+            365
+          ],
+          "pbp_subs": [
+            365,
+            365
+          ],
+          "pbp_final_matches": [
+            362,
+            365
+          ],
+          "non_ncaa_opponent_games": 34,
+          "crossover_games": 25,
+          "in_division_box_both": [
+            307,
+            307
+          ],
+          "in_division_players_both": [
+            307,
+            307
+          ],
+          "in_division_players_sum_ok": [
+            273,
+            307
+          ],
+          "in_division_pbp_subs": [
+            307,
+            307
+          ],
+          "division_teams_seen": 363
+        },
+        "d2": {
+          "games_listed": 300,
+          "games_final": 300,
+          "final_score": [
+            300,
+            300
+          ],
+          "box_both": [
+            300,
+            300
+          ],
+          "box_players_both": [
+            229,
+            300
+          ],
+          "totals_match_score": [
+            299,
+            300
+          ],
+          "players_sum_ok": [
+            182,
+            300
+          ],
+          "pbp_any": [
+            300,
+            300
+          ],
+          "pbp_subs": [
+            300,
+            300
+          ],
+          "pbp_final_matches": [
+            291,
+            300
+          ],
+          "non_ncaa_opponent_games": 80,
+          "crossover_games": 17,
+          "in_division_box_both": [
+            213,
+            213
+          ],
+          "in_division_players_both": [
+            189,
+            213
+          ],
+          "in_division_players_sum_ok": [
+            149,
+            213
+          ],
+          "in_division_pbp_subs": [
+            213,
+            213
+          ],
+          "division_teams_seen": 287
+        },
+        "d3": {
+          "games_listed": 424,
+          "games_final": 424,
+          "final_score": [
+            424,
+            424
+          ],
+          "box_both": [
+            424,
+            424
+          ],
+          "box_players_both": [
+            397,
+            424
+          ],
+          "totals_match_score": [
+            424,
+            424
+          ],
+          "players_sum_ok": [
+            347,
+            424
+          ],
+          "pbp_any": [
+            424,
+            424
+          ],
+          "pbp_subs": [
+            424,
+            424
+          ],
+          "pbp_final_matches": [
+            405,
+            424
+          ],
+          "non_ncaa_opponent_games": 31,
+          "crossover_games": 26,
+          "in_division_box_both": [
+            368,
+            368
+          ],
+          "in_division_players_both": [
+            352,
+            368
+          ],
+          "in_division_players_sum_ok": [
+            311,
+            368
+          ],
+          "in_division_pbp_subs": [
+            368,
+            368
+          ],
+          "division_teams_seen": 396
+        }
+      },
+      "sb_failures": [],
+      "crosswalk_d1": {
+        "espn_final_games": 366,
+        "ncaa_d1_final_games": 365,
+        "espn_games_found_in_ncaa": 364,
+        "ncaa_games_found_in_espn": 364,
+        "teams_total": 417,
+        "teams_name_auto_matched": 404,
+        "teams_unmatched": [
+          "A&M-Corpus Christi \u2194 Texas A&M-Corpus Christi Islanders",
+          "Alcorn \u2194 Alcorn State Braves",
+          "Bloomfield Col. \u2194 Bloomfield Deacons",
+          "Cal St. Fullerton \u2194 Cal State Fullerton Titans",
+          "Calumet Col. \u2194 Calumet St. Joseph Crimson Wave",
+          "Col. of Charleston \u2194 Charleston Cougars",
+          "Mississippi Val. \u2194 Mississippi Valley State Delta Devils",
+          "Penn St.-Behrend \u2194 Penn State Behrend Lions",
+          "S'western Adventist \u2194 Southwestern Adventist Knights",
+          "St. Joseph's (Brkln) \u2194 St. Joseph's Brooklyn Bears",
+          "USC Upstate \u2194 South Carolina Upstate Spartans",
+          "UTRGV \u2194 UT Rio Grande Valley Vaqueros",
+          "West Va. Tech \u2194 WVU Tech Golden Bears"
+        ],
+        "espn_unmatched_sample": [
+          "2026-11-17 Rice Owls vs Texas A&M-Corpus Christi Islanders",
+          "2026-11-22 San Jos\u00e9 State Spartans vs Loyola Chicago Ramblers"
+        ]
+      }
+    },
+    {
+      "start": "2026-01-12",
+      "end": "2026-01-18",
+      "summary": {
+        "d1": {
+          "games_listed": 329,
+          "games_final": 329,
+          "final_score": [
+            329,
+            329
+          ],
+          "box_both": [
+            329,
+            329
+          ],
+          "box_players_both": [
+            329,
+            329
+          ],
+          "totals_match_score": [
+            329,
+            329
+          ],
+          "players_sum_ok": [
+            306,
+            329
+          ],
+          "pbp_any": [
+            329,
+            329
+          ],
+          "pbp_subs": [
+            329,
+            329
+          ],
+          "pbp_final_matches": [
+            329,
+            329
+          ],
+          "non_ncaa_opponent_games": 1,
+          "crossover_games": 4,
+          "in_division_box_both": [
+            325,
+            325
+          ],
+          "in_division_players_both": [
+            325,
+            325
+          ],
+          "in_division_players_sum_ok": [
+            303,
+            325
+          ],
+          "in_division_pbp_subs": [
+            325,
+            325
+          ],
+          "division_teams_seen": 364
+        },
+        "d2": {
+          "games_listed": 287,
+          "games_final": 287,
+          "final_score": [
+            287,
+            287
+          ],
+          "box_both": [
+            287,
+            287
+          ],
+          "box_players_both": [
+            263,
+            287
+          ],
+          "totals_match_score": [
+            287,
+            287
+          ],
+          "players_sum_ok": [
+            210,
+            287
+          ],
+          "pbp_any": [
+            287,
+            287
+          ],
+          "pbp_subs": [
+            287,
+            287
+          ],
+          "pbp_final_matches": [
+            285,
+            287
+          ],
+          "non_ncaa_opponent_games": 2,
+          "crossover_games": 4,
+          "in_division_box_both": [
+            283,
+            283
+          ],
+          "in_division_players_both": [
+            259,
+            283
+          ],
+          "in_division_players_sum_ok": [
+            208,
+            283
+          ],
+          "in_division_pbp_subs": [
+            283,
+            283
+          ],
+          "division_teams_seen": 293
+        },
+        "d3": {
+          "games_listed": 417,
+          "games_final": 417,
+          "final_score": [
+            417,
+            417
+          ],
+          "box_both": [
+            417,
+            417
+          ],
+          "box_players_both": [
+            395,
+            417
+          ],
+          "totals_match_score": [
+            417,
+            417
+          ],
+          "players_sum_ok": [
+            261,
+            417
+          ],
+          "pbp_any": [
+            416,
+            417
+          ],
+          "pbp_subs": [
+            416,
+            417
+          ],
+          "pbp_final_matches": [
+            408,
+            417
+          ],
+          "non_ncaa_opponent_games": 14,
+          "crossover_games": 4,
+          "in_division_box_both": [
+            399,
+            399
+          ],
+          "in_division_players_both": [
+            382,
+            399
+          ],
+          "in_division_players_sum_ok": [
+            256,
+            399
+          ],
+          "in_division_pbp_subs": [
+            399,
+            399
+          ],
+          "division_teams_seen": 405
+        }
+      },
+      "sb_failures": [],
+      "crosswalk_d1": {
+        "espn_final_games": 327,
+        "ncaa_d1_final_games": 329,
+        "espn_games_found_in_ncaa": 326,
+        "ncaa_games_found_in_espn": 326,
+        "teams_total": 365,
+        "teams_name_auto_matched": 358,
+        "teams_unmatched": [
+          "A&M-Corpus Christi \u2194 Texas A&M-Corpus Christi Islanders",
+          "Alcorn \u2194 Alcorn State Braves",
+          "Cal St. Fullerton \u2194 Cal State Fullerton Titans",
+          "Col. of Charleston \u2194 Charleston Cougars",
+          "Mississippi Val. \u2194 Mississippi Valley State Delta Devils",
+          "USC Upstate \u2194 South Carolina Upstate Spartans",
+          "UTRGV \u2194 UT Rio Grande Valley Vaqueros"
+        ],
+        "espn_unmatched_sample": [
+          "2026-01-17 High Point Panthers vs South Carolina Upstate Spartans"
+        ]
+      }
+    }
+  ],
+  "decision": [
+    "D1 box-score coverage \u2265 95% in every week (2026-11-16: 100.0% (365/365), 2026-01-12: 100.0% (329/329)) \u2192 no fallback parser needed",
+    "D2 box-score coverage \u2265 95% in every week (2026-11-16: 100.0% (300/300), 2026-01-12: 100.0% (287/287)) \u2192 no fallback parser needed",
+    "D3 box-score coverage \u2265 95% in every week (2026-11-16: 100.0% (424/424), 2026-01-12: 100.0% (417/417)) \u2192 no fallback parser needed",
+    "**D3: GO** (rule: D3 ships if box-score coverage is at least 95%)."
+  ],
+  "http": {
+    "http_200": 3879,
+    "cache_hit": 340,
+    "net_error": 3,
+    "http_502": 7
+  }
+}
