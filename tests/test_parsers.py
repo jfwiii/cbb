@@ -13,10 +13,10 @@ FIX = Path(__file__).parent / "fixtures"
 class ParserTests(unittest.TestCase):
     def test_boxscore(self):
         box = parse_boxscore(json.loads((FIX / "boxscore_6660932.json").read_text()))
-        self.assertEqual(set(box), {"westfield-st", "purchase-st"})
-        w = box["westfield-st"]["team"]
+        self.assertEqual(set(box), {"home", "away"})
+        w = box["home"]["team"]  # Westfield St.
         self.assertEqual((w["fgm"], w["fga"], w["pts"], w["oreb"], w["dreb"]), (24, 67, 63, 18, 19))
-        self.assertTrue(box["purchase-st"]["players"])
+        self.assertTrue(box["away"]["players"])
 
     def test_possessions(self):
         b = {"fga": 67, "oreb": 18, "tov": 18, "fta": 25}
@@ -58,6 +58,10 @@ class CrosswalkTests(unittest.TestCase):
         kind = self.conn.execute("SELECT kind FROM teams WHERE team_id=?", (tid,)).fetchone()[0]
         self.assertEqual(kind, "non-ncaa")
         self.assertEqual(r(self.conn, {"seo": "some-naia"}, ""), (tid, "matched"))
+        # No slug on ncaa.com -> non-NCAA keyed by name, even with a conference listed
+        tid2, how2 = r(self.conn, {"seo": "", "short": "Shawnee State "}, "mec")
+        self.assertEqual(how2, "auto-non-ncaa")
+        self.assertEqual(r(self.conn, {"seo": "", "short": "Shawnee State"}, "mec"), (tid2, "matched"))
 
     def test_norm(self):
         self.assertTrue(crosswalk.norm_names("Central Conn. St.") & crosswalk.norm_names("Central Connecticut State"))

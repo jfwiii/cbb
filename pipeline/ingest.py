@@ -14,7 +14,7 @@ from pathlib import Path
 from . import config, crosswalk, espn
 from .fetch import Fetcher
 from .ncaa import (NcaaClient, conf_name, conf_seo, game_status, name_key, parse_boxscore,
-                   pbp_summary, possessions, tipoff_utc, to_int)
+                   pbp_summary, possessions, team_key, tipoff_utc, to_int)
 
 
 def now_utc() -> str:
@@ -89,12 +89,13 @@ def ingest_game(conn, client: NcaaClient, d: dt.date, gid: str, g: dict, divs: l
     for side in ("home", "away"):
         names = g[side]["names"]
         tid, how = crosswalk.resolve_ncaa(conn, names, conf_seo(g[side]), st.allow_new_teams)
+        key = team_key(names)
         if tid is None:
-            st.unmatched.setdefault(names["seo"], f'{d} {g.get("title", gid)}')
+            st.unmatched.setdefault(key, f'{d} {g.get("title", gid)}')
         elif how == "auto-non-ncaa":
-            st.auto_added.append(names["seo"])
+            st.auto_added.append(key)
         elif how == "new":
-            st.new_teams.append(names["seo"])
+            st.new_teams.append(key)
         ids[side] = tid
     if None in ids.values():
         return False
@@ -129,9 +130,11 @@ def ingest_game(conn, client: NcaaClient, d: dt.date, gid: str, g: dict, divs: l
     for div in divs:
         st.finals[div] += 1
 
-    seo_to_id = {g["home"]["names"]["seo"]: ids["home"], g["away"]["names"]["seo"]: ids["away"]}
-    conf_by_seo = {g["home"]["names"]["seo"]: (conf_seo(g["home"]), conf_name(g["home"])),
-                   g["away"]["names"]["seo"]: (conf_seo(g["away"]), conf_name(g["away"]))}
+    # Sides, not slugs, link the scoreboard to game details and boxes (a few non-NCAA
+    # opponents have no slug on ncaa.com).
+    seo_to_id = {"home": ids["home"], "away": ids["away"]}
+    conf_by_seo = {"home": (conf_seo(g["home"]), conf_name(g["home"])),
+                   "away": (conf_seo(g["away"]), conf_name(g["away"]))}
 
     # --- game details: per-team division, linescores (OT), venue ---------------
     num_ot = None
@@ -145,11 +148,10 @@ def ingest_game(conn, client: NcaaClient, d: dt.date, gid: str, g: dict, divs: l
         conn.execute("UPDATE games SET venue=?, num_ot=COALESCE(?, num_ot) WHERE game_id=?",
                      (venue or None, num_ot, game_id))
         for t in contest.get("teams") or []:
-            tid = seo_to_id.get(t.get("seoname"))
-            if tid is None:
-                continue
+            side = "home" if t.get("isHome") else "away"
+            tid = seo_to_id[side]
             div = f"d{t['division']}" if t.get("division") else "non-ncaa"
-            cseo, cname = conf_by_seo.get(t.get("seoname"), ("", ""))
+            cseo, cname = conf_by_seo[side]
             if div != "non-ncaa" and cseo:
                 conn.execute(
                     """INSERT INTO conferences (conf_id, season_id, division, name)

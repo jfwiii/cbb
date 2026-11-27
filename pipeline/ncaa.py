@@ -127,14 +127,26 @@ def possessions(b: dict) -> float | None:
     return b["fga"] - b["oreb"] + b["tov"] + config.FT_POSS_COEF * b["fta"]
 
 
+def team_key(names: dict) -> str:
+    """Crosswalk key for an ncaa.com team: its seo slug, or for the few non-NCAA opponents
+    ncaa.com lists without one, 'name:<slugified short name>'."""
+    seo = (names.get("seo") or "").strip()
+    if seo:
+        return seo
+    return "name:" + re.sub(r"[^a-z0-9]+", "-", (names.get("short") or "").lower()).strip("-")
+
+
 def parse_boxscore(box: dict) -> dict[str, dict]:
-    """{ncaa seo: {'team': stat line or None, 'players': [...]}} for teams with box data."""
+    """{'home'|'away': {'team': stat line or None, 'players': [...]}} for teams with box data.
+
+    Sides come from the box's isHome flags, not slugs (some non-NCAA teams have no slug)."""
     out = {}
     if not isinstance(box, dict):
         return out
-    seo_by_id = {str(t.get("teamId")): t.get("seoname") for t in box.get("teams") or []}
+    side_by_id = {str(t.get("teamId")): ("home" if t.get("isHome") else "away")
+                  for t in box.get("teams") or [] if t.get("isHome") is not None}
     for tb in box.get("teamBoxscore") or []:
-        seo = seo_by_id.get(str(tb.get("teamId")))
+        seo = side_by_id.get(str(tb.get("teamId")))
         if not seo:
             continue
         ts = tb.get("teamStats") or {}

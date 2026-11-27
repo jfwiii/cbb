@@ -13,7 +13,7 @@ from . import config, crosswalk, db
 from .fetch import Fetcher
 from .ingest import (RunState, coverage, enrich_espn, finalize, ingest_date, now_utc,
                      write_pbp_bundles)
-from .ncaa import NcaaClient, conf_seo
+from .ncaa import NcaaClient, conf_seo, team_key
 from .publish import publish
 
 EXIT_UNMATCHED, EXIT_COVERAGE = 3, 4
@@ -172,18 +172,20 @@ def cmd_seed_teams(args) -> int:
                 for g in games:
                     for side in ("home", "away"):
                         n = g[side]["names"]
-                        r = seen.setdefault(n["seo"], {"names": n, "conf": False})
-                        r["conf"] |= bool(conf_seo(g[side]))
+                        key = team_key(n)
+                        r = seen.setdefault(key, {"key": key, "names": n, "conf": False})
+                        r["conf"] |= bool(conf_seo(g[side])) and not key.startswith("name:")
                         if n.get("full") and not r["names"].get("full"):
                             r["names"] = n
-    rows = sorted(seen.values(), key=lambda r: (not r["conf"], r["names"]["seo"]))
+    rows = sorted(seen.values(), key=lambda r: (not r["conf"], r["key"]))
     with open(args.out_csv, "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(crosswalk.TEAMS_COLS)
         for i, r in enumerate(rows, 1):
             n = r["names"]
-            w.writerow([i, n["seo"], n.get("short") or n["seo"], n.get("full") or "",
-                        n.get("char6") or "", "ncaa" if r["conf"] else "non-ncaa"])
+            slug = r["key"].removeprefix("name:")
+            w.writerow([i, slug, (n.get("short") or slug).strip(), n.get("full") or "",
+                        n.get("char6") or "", "ncaa" if r["conf"] else "non-ncaa", r["key"]])
     log(f"wrote {len(rows)} teams to {args.out_csv} "
         f"({sum(r['conf'] for r in rows)} NCAA, {sum(not r['conf'] for r in rows)} non-NCAA)")
     return 0

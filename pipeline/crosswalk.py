@@ -14,7 +14,7 @@ import re
 import sqlite3
 from pathlib import Path
 
-TEAMS_COLS = ["team_id", "slug", "name", "full_name", "char6", "kind"]
+TEAMS_COLS = ["team_id", "slug", "name", "full_name", "char6", "kind", "ncaa_key"]
 
 
 def load_teams_csv(conn: sqlite3.Connection, path: Path) -> int:
@@ -35,7 +35,7 @@ def load_teams_csv(conn: sqlite3.Connection, path: Path) -> int:
                 """INSERT INTO team_aliases (source, source_key, team_id, origin)
                    VALUES ('ncaa', ?, ?, 'teams.csv')
                    ON CONFLICT(source, source_key) DO UPDATE SET team_id=excluded.team_id""",
-                (r["slug"], tid))
+                (r.get("ncaa_key") or r["slug"], tid))
             n += 1
     return n
 
@@ -64,25 +64,31 @@ def lookup(conn: sqlite3.Connection, source: str, key: str) -> int | None:
 
 
 def _new_team(conn, names: dict, kind: str, origin: str) -> int:
+    from .ncaa import team_key
     tid = (conn.execute("SELECT COALESCE(MAX(team_id), 0) FROM teams").fetchone()[0]) + 1
-    slug = names["seo"]
+    key = team_key(names)
+    slug = key.removeprefix("name:")
     if conn.execute("SELECT 1 FROM teams WHERE slug=?", (slug,)).fetchone():
         slug = f"{slug}-{tid}"
     conn.execute("INSERT INTO teams (team_id, name, slug, full_name, char6, kind) "
                  "VALUES (?,?,?,?,?,?)",
-                 (tid, names.get("short") or names["seo"], slug, names.get("full") or None,
+                 (tid, (names.get("short") or slug).strip(), slug, names.get("full") or None,
                   names.get("char6") or None, kind))
     conn.execute("INSERT INTO team_aliases (source, source_key, team_id, origin) "
-                 "VALUES ('ncaa', ?, ?, ?)", (names["seo"], tid, origin))
+                 "VALUES ('ncaa', ?, ?, ?)", (key, tid, origin))
     return tid
 
 
 def resolve_ncaa(conn, names: dict, conference: str, allow_new: bool = False):
-    """Returns (team_id or None, how) where how in matched / auto-non-ncaa / new / unmatched."""
-    tid = lookup(conn, "ncaa", names["seo"])
+    """Returns (team_id or None, how) where how in matched / auto-non-ncaa / new / unmatched.
+
+    Every NCAA member has a slug on ncaa.com, so a team without one is non-NCAA."""
+    from .ncaa import team_key
+    key = team_key(names)
+    tid = lookup(conn, "ncaa", key)
     if tid is not None:
         return tid, "matched"
-    if not conference:
+    if not conference or key.startswith("name:"):
         return _new_team(conn, names, "non-ncaa", "auto-non-ncaa"), "auto-non-ncaa"
     if allow_new:
         return _new_team(conn, names, "ncaa", "auto-new"), "new"
@@ -90,14 +96,17 @@ def resolve_ncaa(conn, names: dict, conference: str, allow_new: bool = False):
 
 
 def export_teams_csv(conn: sqlite3.Connection, path: Path) -> None:
-    rows = conn.execute("SELECT team_id, slug, name, full_name, char6, kind FROM teams "
-                        "ORDER BY team_id").fetchall()
+    rows = conn.execute(
+        """SELECT t.team_id, t.slug, t.name, t.full_name, t.char6, t.kind,
+                  (SELECT MIN(source_key) FROM team_aliases a WHERE a.team_id=t.team_id
+                   AND a.source='ncaa') AS ncaa_key
+           FROM teams t ORDER BY t.team_id""").fetchall()
     with open(path, "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(TEAMS_COLS)
         for r in rows:
             w.writerow([r["team_id"], r["slug"], r["name"], r["full_name"] or "",
-                        r["char6"] or "", r["kind"]])
+                        r["char6"] or "", r["kind"], r["ncaa_key"] or r["slug"]])
 
 
 # --------------------------------------------------------------------------- #

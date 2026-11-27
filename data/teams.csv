@@ -1,0 +1,1357 @@
+team_id,slug,name,full_name,char6,kind,ncaa_key
+1,abilene-christian,Abilene Christian,,ABILCH,ncaa,abilene-christian
+2,adams-st,Adams St.,,ADAMST,ncaa,adams-st
+3,adelphi,Adelphi,,ADELPH,ncaa,adelphi
+4,adrian,Adrian,,ADRIAN,ncaa,adrian
+5,air-force,Air Force,,AIRFOR,ncaa,air-force
+6,akron,Akron,,AKRON,ncaa,akron
+7,ala-huntsville,UAH,,UAH,ncaa,ala-huntsville
+8,alabama,Alabama,,ALA,ncaa,alabama
+9,alabama-am,Alabama A&M,,AL A&M,ncaa,alabama-am
+10,alabama-st,Alabama St.,,ALA ST,ncaa,alabama-st
+11,alas-anchorage,Alas. Anchorage,,AK ANC,ncaa,alas-anchorage
+12,alas-fairbanks,Alas. Fairbanks,,AK FBK,ncaa,alas-fairbanks
+13,albany-ny,UAlbany,,ALBANY,ncaa,albany-ny
+14,albany-st-ga,Albany St. (GA),,ALBYST,ncaa,albany-st-ga
+15,albertus-magnus,Albertus Magnus,,ALBMAG,ncaa,albertus-magnus
+16,albion,Albion,,ALBION,ncaa,albion
+17,albright,Albright,,ALBRHT,ncaa,albright
+18,alcorn,Alcorn,,ALCORN,ncaa,alcorn
+19,alfred,Alfred,,ALFRED,ncaa,alfred
+20,alfred-st,Alfred St.,,ALFRST,ncaa,alfred-st
+21,allegheny,Allegheny,,ALLEGH,ncaa,allegheny
+22,allen,Allen,,ALLEN,ncaa,allen
+23,alma,Alma,,ALMA,ncaa,alma
+24,alvernia,Alvernia,,ALVRNI,ncaa,alvernia
+25,am-corpus-chris,A&M-Corpus Christi,,TAMUCC,ncaa,am-corpus-chris
+26,american,American,,AMER,ncaa,american
+27,american-intl,American Int'l,,AM INT,ncaa,american-intl
+28,amherst,Amherst,,AMHRST,ncaa,amherst
+29,anderson-in,Anderson (IN),,AND IN,ncaa,anderson-in
+30,anderson-sc,Anderson (SC),,AND SC,ncaa,anderson-sc
+31,angelo-st,Angelo St.,,ANGELO,ncaa,angelo-st
+32,anna-maria,Anna Maria,,ANNAMA,ncaa,anna-maria
+33,appalachian-st,App State,,APP ST,ncaa,appalachian-st
+34,arcadia,Arcadia,,ARCADI,ncaa,arcadia
+35,arizona,Arizona,,ARIZ,ncaa,arizona
+36,arizona-st,Arizona St.,,AZ ST,ncaa,arizona-st
+37,ark-fort-smith,Ark.-Fort Smith,,ARK FS,ncaa,ark-fort-smith
+38,ark-monticello,Ark.-Monticello,,ARKMON,ncaa,ark-monticello
+39,ark-pine-bluff,Ark.-Pine Bluff,,ARK PB,ncaa,ark-pine-bluff
+40,arkansas,Arkansas,,ARK,ncaa,arkansas
+41,arkansas-st,Arkansas St.,,ARK ST,ncaa,arkansas-st
+42,arkansas-tech,Arkansas Tech,,ARKTEC,ncaa,arkansas-tech
+43,army,Army West Point,,ARMY,ncaa,army
+44,asbury,Asbury,,ASBURY,ncaa,asbury
+45,ashland,Ashland,,ASHLND,ncaa,ashland
+46,assumption,Assumption,,ASSUMP,ncaa,assumption
+47,aub-montgomery,AUM,,AUBMON,ncaa,aub-montgomery
+48,auburn,Auburn,,AUBURN,ncaa,auburn
+49,augsburg,Augsburg,,AUGSBU,ncaa,augsburg
+50,augustana-il,Augustana (IL),,AUG IL,ncaa,augustana-il
+51,augustana-sd,Augustana (SD),,AUG SD,ncaa,augustana-sd
+52,aurora,Aurora,,AURORA,ncaa,aurora
+53,austin,Austin,,AUSTIN,ncaa,austin
+54,austin-peay,Austin Peay,,A PEAY,ncaa,austin-peay
+55,averett,Averett,,AVERET,ncaa,averett
+56,azusa-pacific,Azusa Pacific,,AZUSA,ncaa,azusa-pacific
+57,babson,Babson,,BABSON,ncaa,babson
+58,bakersfield,CSU Bakersfield,,CSUBAK,ncaa,bakersfield
+59,baldwin-wallace,Baldwin Wallace,,BALDWA,ncaa,baldwin-wallace
+60,ball-st,Ball St.,,BALLST,ncaa,ball-st
+61,bard,Bard,,BARD,ncaa,bard
+62,barry,Barry,,BARRY,ncaa,barry
+63,barton,Barton,,BARTON,ncaa,barton
+64,baruch,Baruch,,BARUCH,ncaa,baruch
+65,bates,Bates,,BATES,ncaa,bates
+66,baylor,Baylor,,BAYLOR,ncaa,baylor
+67,belhaven,Belhaven,,BELH,ncaa,belhaven
+68,bellarmine,Bellarmine,,BELLAR,ncaa,bellarmine
+69,belmont,Belmont,,BELMNT,ncaa,belmont
+70,belmont-abbey,Belmont Abbey,,BELABY,ncaa,belmont-abbey
+71,beloit,Beloit,,BELOIT,ncaa,beloit
+72,bemidji-st,Bemidji St.,,BEMDJI,ncaa,bemidji-st
+73,benedict,Benedict,,BENDCT,ncaa,benedict
+74,benedictine-il,Benedictine (IL),,BENILL,ncaa,benedictine-il
+75,bentley,Bentley,,BENTLY,ncaa,bentley
+76,berea,Berea,,BEREA,ncaa,berea
+77,berry,Berry,,BERRY,ncaa,berry
+78,bethany-lutheran,Bethany Lutheran,,BETHLU,ncaa,bethany-lutheran
+79,bethany-wv,Bethany (WV),,BETHWV,ncaa,bethany-wv
+80,bethel-mn,Bethel (MN),,BETHEL,ncaa,bethel-mn
+81,bethune-cookman,Bethune-Cookman,,BECOOK,ncaa,bethune-cookman
+82,binghamton,Binghamton,,BINGHA,ncaa,binghamton
+83,biola,Biola,,BIOLA,ncaa,biola
+84,black-hills-st,Black Hills St.,,BLKHLS,ncaa,black-hills-st
+85,blackburn,Blackburn,,BLACKB,ncaa,blackburn
+86,bloomsburg,Bloomsburg,,BLOOMB,ncaa,bloomsburg
+87,bluefield-st,Bluefield St.,,BLUEST,ncaa,bluefield-st
+88,bluffton,Bluffton,,BLUFF,ncaa,bluffton
+89,boise-st,Boise St.,,BOISE,ncaa,boise-st
+90,boston-college,Boston College,,BC,ncaa,boston-college
+91,boston-u,Boston U.,,BU,ncaa,boston-u
+92,bowdoin,Bowdoin,,BOWDOI,ncaa,bowdoin
+93,bowie-st,Bowie St.,,BOWIE,ncaa,bowie-st
+94,bowling-green,Bowling Green,,BGSU,ncaa,bowling-green
+95,bradley,Bradley,,BRAD,ncaa,bradley
+96,brandeis,Brandeis,,BRAND,ncaa,brandeis
+97,brevard,Brevard,,BRVARD,ncaa,brevard
+98,bridgeport,Bridgeport,,BRIDGE,ncaa,bridgeport
+99,bridgewater-st,Bridgewater St.,,BRIDST,ncaa,bridgewater-st
+100,bridgewater-va,Bridgewater (VA),,BRIDVA,ncaa,bridgewater-va
+101,brockport,SUNY Brockport,,BRKPRT,ncaa,brockport
+102,brooklyn,Brooklyn,,BKLYN,ncaa,brooklyn
+103,brown,Brown,,BROWN,ncaa,brown
+104,bryant,Bryant,,BRYANT,ncaa,bryant
+105,bucknell,Bucknell,,BUCKNL,ncaa,bucknell
+106,buena-vista,Buena Vista,,BUENVI,ncaa,buena-vista
+107,buffalo,Buffalo,,BUFF,ncaa,buffalo
+108,buffalo-st,Buffalo St.,,BUFFST,ncaa,buffalo-st
+109,butler,Butler,,BUTLER,ncaa,butler
+110,byu,BYU,,BYU,ncaa,byu
+111,cairn,Cairn,,CAIRN,ncaa,cairn
+112,cal-lutheran,Cal Lutheran,,CALLUT,ncaa,cal-lutheran
+113,cal-poly,Cal Poly,,CALPLY,ncaa,cal-poly
+114,cal-poly-pomona,Cal Poly Pomona,,CALPOM,ncaa,cal-poly-pomona
+115,cal-st-dom-hills,Cal St. Dom. Hills,,CSUDH,ncaa,cal-st-dom-hills
+116,cal-st-east-bay,Cal St. East Bay,,CSUEBY,ncaa,cal-st-east-bay
+117,cal-st-fullerton,Cal St. Fullerton,,CSFULL,ncaa,cal-st-fullerton
+118,cal-st-la,Cal State LA,,LA,ncaa,cal-st-la
+119,cal-st-monterey-bay,Cal St. Monterey Bay,,CSUMB,ncaa,cal-st-monterey-bay
+120,cal-st-northridge,CSUN,,CSUN,ncaa,cal-st-northridge
+121,cal-st-san-bdino,CSUSB,,CSUSB,ncaa,cal-st-san-bdino
+122,cal-st-san-marcos,Cal St. San Marcos,,CSUSM,ncaa,cal-st-san-marcos
+123,cal-st-stanislaus,Stanislaus St.,,CSUSTN,ncaa,cal-st-stanislaus
+124,caldwell,Caldwell,,CALDWL,ncaa,caldwell
+125,california,California,,CAL,ncaa,california
+126,california-baptist,California Baptist,,CALBAP,ncaa,california-baptist
+127,california-pa,California (PA),,CAL PA,ncaa,california-pa
+128,caltech,Caltech,,CALTEC,ncaa,caltech
+129,calvin,Calvin,,CALVIN,ncaa,calvin
+130,cameron,Cameron,,CAMERO,ncaa,cameron
+131,campbell,Campbell,,CAMPBL,ncaa,campbell
+132,canisius,Canisius,,CANISI,ncaa,canisius
+133,capital,Capital,,CAPTAL,ncaa,capital
+134,carleton,Carleton,,CARLET,ncaa,carleton
+135,carlow,Carlow,,,ncaa,carlow
+136,carnegie-mellon,Carnegie Mellon,,CARMEL,ncaa,carnegie-mellon
+137,carroll-wi,Carroll (WI),,CARROL,ncaa,carroll-wi
+138,carson-newman,Carson-Newman,,CARNEW,ncaa,carson-newman
+139,carthage,Carthage,,CARTH,ncaa,carthage
+140,case,CWRU,,CASE,ncaa,case
+141,castleton,VTSU Castleton,,CASTLE,ncaa,castleton
+142,catawba,Catawba,,CATAWB,ncaa,catawba
+143,catholic,Catholic,,CATH,ncaa,catholic
+144,ccny,CCNY,,CCNY,ncaa,ccny
+145,cedarville,Cedarville,,CEDARV,ncaa,cedarville
+146,centenary-la,Centenary (LA),,CENTLA,ncaa,centenary-la
+147,centenary-nj,Centenary (NJ),,CENTNJ,ncaa,centenary-nj
+148,central-ark,Central Ark.,,C ARK,ncaa,central-ark
+149,central-conn-st,Central Conn. St.,,C CONN,ncaa,central-conn-st
+150,central-ia,Central (IA),,CENTRL,ncaa,central-ia
+151,central-mich,Central Mich.,,C MICH,ncaa,central-mich
+152,central-mo,Central Mo.,,CENTMO,ncaa,central-mo
+153,central-okla,Central Okla.,,C OKLA,ncaa,central-okla
+154,central-st-oh,Central St. (OH),,CEN ST,ncaa,central-st-oh
+155,central-wash,Central Wash.,,C WASH,ncaa,central-wash
+156,centre,Centre,,CENTRE,ncaa,centre
+157,chadron-st,Chadron St.,,CHANDR,ncaa,chadron-st
+158,chaminade,Chaminade,,CHAMIN,ncaa,chaminade
+159,chapman,Chapman,,CHAPMN,ncaa,chapman
+160,charleston-so,Charleston So.,,CHARSO,ncaa,charleston-so
+161,charleston-wv,Charleston (WV),,UC (WV),ncaa,charleston-wv
+162,charlotte,Charlotte,,CHAR,ncaa,charlotte
+163,chatham,Chatham,,CHATHA,ncaa,chatham
+164,chattanooga,Chattanooga,,CHAT,ncaa,chattanooga
+165,chestnut-hill,Chestnut Hill,,CHESTN,ncaa,chestnut-hill
+166,chicago,UChicago,,CHICAG,ncaa,chicago
+167,chicago-st,Chicago St.,,CHI ST,ncaa,chicago-st
+168,chico-st,Chico St.,,CHICO,ncaa,chico-st
+169,chowan,Chowan,,CHOWAN,ncaa,chowan
+170,chris-newport,Chris. Newport,,CHRNEW,ncaa,chris-newport
+171,christian-bros,Christian Brothers,,CH BRO,ncaa,christian-bros
+172,cincinnati,Cincinnati,,CINCY,ncaa,cincinnati
+173,citadel,The Citadel,,CITDEL,ncaa,citadel
+174,claflin,Claflin,,CLAFLN,ncaa,claflin
+175,claremont-m-s,CMS,,C-M-S,ncaa,claremont-m-s
+176,clarion,Clarion,,CLARIO,ncaa,clarion
+177,clark-atlanta,Clark Atlanta,,CK ATL,ncaa,clark-atlanta
+178,clark-ma,Clark (MA),,CLRKMA,ncaa,clark-ma
+179,clarkson,Clarkson,,CLARKS,ncaa,clarkson
+180,clayton-st,Clayton St.,,CLAYST,ncaa,clayton-st
+181,clemson,Clemson,,CLEM,ncaa,clemson
+182,cleveland-st,Cleveland St.,,CLE ST,ncaa,cleveland-st
+183,coast-guard,Coast Guard,,COAST,ncaa,coast-guard
+184,coastal-caro,Coastal Carolina,,CO CAR,ncaa,coastal-caro
+185,cobleskill-st,SUNY Cobleskill,,COBLES,ncaa,cobleskill-st
+186,coe,Coe,,COE,ncaa,coe
+187,coker,Coker,,COKER,ncaa,coker
+188,col-of-charleston,Col. of Charleston,,C OF C,ncaa,col-of-charleston
+189,colby,Colby,,COLBY,ncaa,colby
+190,colby-sawyer,Colby-Sawyer,,CBYSAW,ncaa,colby-sawyer
+191,colgate,Colgate,,COLGAT,ncaa,colgate
+192,colo-christian,Colo. Christian,,CO CHR,ncaa,colo-christian
+193,colorado,Colorado,,COLO,ncaa,colorado
+194,colorado-col,Colorado Col.,,CO COL,ncaa,colorado-col
+195,colorado-mesa,Colorado Mesa,,COMESA,ncaa,colorado-mesa
+196,colorado-mines,Colo. Sch. of Mines,,MINES,ncaa,colorado-mines
+197,colorado-st,Colorado St.,,CO ST,ncaa,colorado-st
+198,colorado-st-pueblo,CSU Pueblo,,CSUPUE,ncaa,colorado-st-pueblo
+199,columbia,Columbia,,COLUMB,ncaa,columbia
+200,columbus-st,Columbus St.,,CLMBST,ncaa,columbus-st
+201,concord,Concord,,CONCRD,ncaa,concord
+202,concordia-chicago,Concordia Chicago,,CONCCH,ncaa,concordia-chicago
+203,concordia-irvine,CUI,,CUI,ncaa,concordia-irvine
+204,concordia-mhead,Concordia-M'head,,CONCMH,ncaa,concordia-mhead
+205,concordia-st-paul,Concordia-St. Paul,,CONCSP,ncaa,concordia-st-paul
+206,concordia-tx,Concordia (TX),,CONCTX,ncaa,concordia-tx
+207,concordia-wi,Concordia Wisconsin,,CONCWI,ncaa,concordia-wi
+208,connecticut-col,Connecticut Col.,,CT COL,ncaa,connecticut-col
+209,converse,Converse,,CONVER,ncaa,converse
+210,coppin-st,Coppin St.,,COPPIN,ncaa,coppin-st
+211,cornell,Cornell,,CORN,ncaa,cornell
+212,cornell-college,Cornell College,,CORCOL,ncaa,cornell-college
+213,covenant,Covenant,,COVENT,ncaa,covenant
+214,creighton,Creighton,,CREIGH,ncaa,creighton
+215,crown-mn,Crown (MN),,CROWN,ncaa,crown-mn
+216,curry,Curry,,CURRY,ncaa,curry
+217,daemen,Daemen,,DAEMEN,ncaa,daemen
+218,dallas,Dallas,,DALLAS,ncaa,dallas
+219,dallas-baptist,DBU,,DBU,ncaa,dallas-baptist
+220,dartmouth,Dartmouth,,DART,ncaa,dartmouth
+221,davenport,Davenport,,DAVEN,ncaa,davenport
+222,davidson,Davidson,,DAVID,ncaa,davidson
+223,davis-elkins,Davis & Elkins,,DAVELK,ncaa,davis-elkins
+224,dayton,Dayton,,DAYTON,ncaa,dayton
+225,dean-college,Dean,,DEAN,ncaa,dean-college
+226,delaware,Delaware,,DEL,ncaa,delaware
+227,delaware-st,Delaware St.,,DEL ST,ncaa,delaware-st
+228,delaware-valley,Delaware Valley,,DELVAL,ncaa,delaware-valley
+229,delta-st,Delta St.,,DELTA,ncaa,delta-st
+230,denison,Denison,,DENISO,ncaa,denison
+231,denver,Denver,,DENVER,ncaa,denver
+232,depaul,DePaul,,DEPAUL,ncaa,depaul
+233,depauw,DePauw,,DEPAUW,ncaa,depauw
+234,desales,DeSales,,DESALE,ncaa,desales
+235,detroit,Detroit Mercy,,DET,ncaa,detroit
+236,dickinson,Dickinson,,DICKIN,ncaa,dickinson
+237,dist-columbia,Dist. Columbia,,UDC,ncaa,dist-columbia
+238,dominican-ca,Dominican (CA),,DOM CA,ncaa,dominican-ca
+239,dominican-il,Dominican (IL),,DOM IL,ncaa,dominican-il
+240,dominican-ny,Dominican (NY),,DOM NY,ncaa,dominican-ny
+241,drake,Drake,,DRAKE,ncaa,drake
+242,drew,Drew,,DREW,ncaa,drew
+243,drexel,Drexel,,DREXEL,ncaa,drexel
+244,drury,Drury,,DRURY,ncaa,drury
+245,dubuque,Dubuque,,DUBUQU,ncaa,dubuque
+246,duke,Duke,,DUKE,ncaa,duke
+247,duquesne,Duquesne,,DUQSNE,ncaa,duquesne
+248,dyouville,D'Youville,,DYOUV,ncaa,dyouville
+249,earlham,Earlham,,EARLHA,ncaa,earlham
+250,east-carolina,East Carolina,,E CAR,ncaa,east-carolina
+251,east-central,East Central,,E CENT,ncaa,east-central
+252,east-mennonite,East. Mennonite,,EMENNO,ncaa,east-mennonite
+253,east-stroudsburg,East Stroudsburg,,ESTROU,ncaa,east-stroudsburg
+254,east-tenn-st,ETSU,,ETSU,ncaa,east-tenn-st
+255,east-tex-baptist,East Tex. Baptist,,ETEXBA,ncaa,east-tex-baptist
+256,eastern,Eastern,,EASTRN,ncaa,eastern
+257,eastern-conn-st,Eastern Conn. St.,,ECSU,ncaa,eastern-conn-st
+258,eastern-ill,Eastern Ill.,,E ILL,ncaa,eastern-ill
+259,eastern-ky,Eastern Ky.,,E KY,ncaa,eastern-ky
+260,eastern-mich,Eastern Mich.,,E MICH,ncaa,eastern-mich
+261,eastern-nm,Eastern N.M.,,E NM,ncaa,eastern-nm
+262,eastern-wash,Eastern Wash.,,E WASH,ncaa,eastern-wash
+263,eckerd,Eckerd,,ECKERD,ncaa,eckerd
+264,edgewood,Edgewood,,EWOOD,ncaa,edgewood
+265,edinboro,Edinboro,,EBORO,ncaa,edinboro
+266,edward-waters,Edward Waters,,ED WAT,ncaa,edward-waters
+267,elizabeth-city-st,Elizabeth City St.,,ELZCST,ncaa,elizabeth-city-st
+268,elizabethtown,Elizabethtown,,ELIZBT,ncaa,elizabethtown
+269,elmhurst,Elmhurst,,ELMHUR,ncaa,elmhurst
+270,elmira,Elmira,,ELMIRA,ncaa,elmira
+271,elms,Elms,,ELMS,ncaa,elms
+272,elon,Elon,,ELON,ncaa,elon
+273,embry-riddle-fl,Embry-Riddle (FL),,EMBRY,ncaa,embry-riddle-fl
+274,emerson,Emerson,,EMERSO,ncaa,emerson
+275,emmanuel-ga,Emmanuel (GA),,EMMAN,ncaa,emmanuel-ga
+276,emmanuel-ma,Emmanuel (MA),,EMM MA,ncaa,emmanuel-ma
+277,emory,Emory,,EMORY,ncaa,emory
+278,emory-henry,Emory & Henry,,EM&HEN,ncaa,emory-henry
+279,emporia-st,Emporia St.,,EMP ST,ncaa,emporia-st
+280,endicott,Endicott,,ENDICO,ncaa,endicott
+281,erskine,Erskine,,ERSKIN,ncaa,erskine
+282,eureka,Eureka,,EUREKA,ncaa,eureka
+283,evansville,Evansville,,EVANS,ncaa,evansville
+284,fairfield,Fairfield,,FAIR,ncaa,fairfield
+285,fairmont-st,Fairmont St.,,FAIRMO,ncaa,fairmont-st
+286,farmingdale-st,Farmingdale St.,,FARMST,ncaa,farmingdale-st
+287,fayetteville-st,Fayetteville St.,,FAY ST,ncaa,fayetteville-st
+288,fdu,FDU,,FDU,ncaa,fdu
+289,fdu-florham,FDU-Florham,,FDUFLO,ncaa,fdu-florham
+290,felician,Felician,,FELICI,ncaa,felician
+291,ferris-st,Ferris St.,,FERRIS,ncaa,ferris-st
+292,ferrum,Ferrum,,FERRUM,ncaa,ferrum
+293,fgcu,FGCU,,FGCU,ncaa,fgcu
+294,findlay,Findlay,,FINDLY,ncaa,findlay
+295,fitchburg-st,Fitchburg St.,,FITCH,ncaa,fitchburg-st
+296,fiu,FIU,,FIU,ncaa,fiu
+297,fla-atlantic,Fla. Atlantic,,FAU,ncaa,fla-atlantic
+298,fla-southern,Fla. Southern,,FLA SO,ncaa,fla-southern
+299,flagler,Flagler,,FLAG,ncaa,flagler
+300,florida,Florida,,FLA,ncaa,florida
+301,florida-am,Florida A&M,,FL A&M,ncaa,florida-am
+302,florida-st,Florida St.,,FSU,ncaa,florida-st
+303,florida-tech,Florida Tech,,FLTECH,ncaa,florida-tech
+304,fordham,Fordham,,FORDHM,ncaa,fordham
+305,fort-hays-st,Fort Hays St.,,FTHAYS,ncaa,fort-hays-st
+306,fort-lewis,Fort Lewis,,FT LEW,ncaa,fort-lewis
+307,fort-valley-st,Fort Valley St.,,FT VAL,ncaa,fort-valley-st
+308,framingham-st,Framingham St.,,FRAMST,ncaa,framingham-st
+309,francis-marion,Francis Marion,,FRANMA,ncaa,francis-marion
+310,franciscan,Franciscan,,FRANCI,ncaa,franciscan
+311,frank-marsh,Franklin & Marshall,,FR&MAR,ncaa,frank-marsh
+312,franklin,Franklin,,FRANK,ncaa,franklin
+313,franklin-pierce,Franklin Pierce,,FRPRCE,ncaa,franklin-pierce
+314,fredonia-st,Fredonia,,FREDON,ncaa,fredonia-st
+315,fresno-pacific,Fresno Pacific,,FREPAC,ncaa,fresno-pacific
+316,fresno-st,Fresno St.,,FRESNO,ncaa,fresno-st
+317,frostburg-st,Frostburg St.,,FROST,ncaa,frostburg-st
+318,furman,Furman,,FURMAN,ncaa,furman
+319,ga-southern,Ga. Southern,,GA SOU,ncaa,ga-southern
+320,ga-southwestern,Ga. Southwestern,,GA SW,ncaa,ga-southwestern
+321,gallaudet,Gallaudet,,GALLUD,ncaa,gallaudet
+322,gannon,Gannon,,GANNON,ncaa,gannon
+323,gardner-webb,Gardner-Webb,,G WEBB,ncaa,gardner-webb
+324,geneva,Geneva,,GENEVA,ncaa,geneva
+325,george-fox,George Fox,,GEOFOX,ncaa,george-fox
+326,george-mason,George Mason,,GMU,ncaa,george-mason
+327,george-washington,George Washington,,G WASH,ncaa,george-washington
+328,georgetown,Georgetown,,GTOWN,ncaa,georgetown
+329,georgia,Georgia,,UGA,ncaa,georgia
+330,georgia-college,Georgia College,,GACOLL,ncaa,georgia-college
+331,georgia-st,Georgia St.,,GA ST,ncaa,georgia-st
+332,georgia-tech,Georgia Tech,,GATECH,ncaa,georgia-tech
+333,georgian-court,Georgian Court,,GCOURT,ncaa,georgian-court
+334,gettysburg,Gettysburg,,GETTYS,ncaa,gettysburg
+335,glenville-st,Glenville St.,,GLENVI,ncaa,glenville-st
+336,goldey-beacom,Goldey-Beacom,,GOLDBE,ncaa,goldey-beacom
+337,gonzaga,Gonzaga,,GONZ,ncaa,gonzaga
+338,gordon,Gordon,,GORDON,ncaa,gordon
+339,goucher,Goucher,,GCHER,ncaa,goucher
+340,grambling,Grambling,,GRAMB,ncaa,grambling
+341,grand-canyon,Grand Canyon,,GCANYN,ncaa,grand-canyon
+342,grand-valley-st,Grand Valley St.,,GVSU,ncaa,grand-valley-st
+343,green-bay,Green Bay,,GRNBAY,ncaa,green-bay
+344,greensboro,Greensboro,,GREENS,ncaa,greensboro
+345,greenville,Greenville,,GRNVL,ncaa,greenville
+346,grinnell,Grinnell,,GRINN,ncaa,grinnell
+347,grove-city,Grove City,,GROVE,ncaa,grove-city
+348,gru-augusta,Augusta,,AUG U,ncaa,gru-augusta
+349,guilford,Guilford,,GUILF,ncaa,guilford
+350,gust-adolphus,Gustavus Adolphus,,GUSTAD,ncaa,gust-adolphus
+351,gwynedd-mercy,Gwynedd Mercy,,GWYMER,ncaa,gwynedd-mercy
+352,hamilton,Hamilton,,HAMLTN,ncaa,hamilton
+353,hamline,Hamline,,HAMLIN,ncaa,hamline
+354,hampden-sydney,Hampden-Sydney,,HAMSYD,ncaa,hampden-sydney
+355,hampton,Hampton,,HAMPTN,ncaa,hampton
+356,hanover,Hanover,,HNOVER,ncaa,hanover
+357,hardin-simmons,Hardin-Simmons,,HARSIM,ncaa,hardin-simmons
+358,harding,Harding,,HARDNG,ncaa,harding
+359,hartford,Hartford,,HRTFRD,ncaa,hartford
+360,hartwick,Hartwick,,HRTWCK,ncaa,hartwick
+361,harvard,Harvard,,HARV,ncaa,harvard
+362,haverford,Haverford,,HAVFRD,ncaa,haverford
+363,hawaii,Hawaii,,HAWAII,ncaa,hawaii
+364,hawaii-hilo,Hawaii Hilo,,HIHILO,ncaa,hawaii-hilo
+365,hawaii-pacific,Hawaii Pacific,,HAWPAC,ncaa,hawaii-pacific
+366,heidelberg,Heidelberg,,HEIDEL,ncaa,heidelberg
+367,henderson-st,Henderson St.,,HENDST,ncaa,henderson-st
+368,hendrix,Hendrix,,HENDRX,ncaa,hendrix
+369,high-point,High Point,,HIGHPT,ncaa,high-point
+370,hilbert,Hilbert,,HILBRT,ncaa,hilbert
+371,hillsdale,Hillsdale,,HILLSD,ncaa,hillsdale
+372,hiram,Hiram,,HIRAM,ncaa,hiram
+373,hobart,Hobart,,HOBART,ncaa,hobart
+374,hofstra,Hofstra,,HOFSTR,ncaa,hofstra
+375,holy-cross,Holy Cross,,HOLYCR,ncaa,holy-cross
+376,holy-family,Holy Family,,HOLFAM,ncaa,holy-family
+377,hood,Hood,,HOOD,ncaa,hood
+378,hope,Hope,,HOPE,ncaa,hope
+379,houghton,Houghton,,HOUGHT,ncaa,houghton
+380,houston,Houston,,HOU,ncaa,houston
+381,houston-christian,Houston Christian,,HOUCHR,ncaa,houston-christian
+382,howard,Howard,,HOWARD,ncaa,howard
+383,howard-payne,Howard Payne,,HOWPAY,ncaa,howard-payne
+384,humboldt-st,Cal Poly Humboldt,,HUMBST,ncaa,humboldt-st
+385,hunter,Hunter,,HUNTER,ncaa,hunter
+386,huntingdon,Huntingdon,,HNTGDN,ncaa,huntingdon
+387,husson,Husson,,HUSSON,ncaa,husson
+388,idaho,Idaho,,IDAHO,ncaa,idaho
+389,idaho-st,Idaho St.,,ID ST,ncaa,idaho-st
+390,iit,Illinois Tech,,ILLTEC,ncaa,iit
+391,ill-chicago,UIC,,UIC,ncaa,ill-chicago
+392,ill-springfield,Ill. Springfield,,IL SPR,ncaa,ill-springfield
+393,ill-wesleyan,Ill. Wesleyan,,ILLWES,ncaa,ill-wesleyan
+394,illinois,Illinois,,ILL,ncaa,illinois
+395,illinois-col,Illinois Col.,,ILLCOL,ncaa,illinois-col
+396,illinois-st,Illinois St.,,ILL ST,ncaa,illinois-st
+397,immaculata,Immaculata,,IMMAC,ncaa,immaculata
+398,indiana,Indiana,,IND,ncaa,indiana
+399,indiana-pa,Indiana (PA),,IUP,ncaa,indiana-pa
+400,indiana-st,Indiana St.,,IND ST,ncaa,indiana-st
+401,indianapolis,UIndy,,UINDY,ncaa,indianapolis
+402,iona,Iona,,IONA,ncaa,iona
+403,iowa,Iowa,,IOWA,ncaa,iowa
+404,iowa-st,Iowa St.,,IOWAST,ncaa,iowa-st
+405,ipfw,Purdue Fort Wayne,,IPFW,ncaa,ipfw
+406,ithaca,Ithaca,,ITHACA,ncaa,ithaca
+407,iu-indy,IU Indy,,IUINDY,ncaa,iu-indy
+408,jackson-st,Jackson St.,,JACKST,ncaa,jackson-st
+409,jacksonville,Jacksonville,,JVILLE,ncaa,jacksonville
+410,jacksonville-st,Jacksonville St.,,JAX ST,ncaa,jacksonville-st
+411,james-madison,James Madison,,JMU,ncaa,james-madison
+412,jamestown,Jamestown,,,ncaa,jamestown
+413,jessup,Jessup,,,ncaa,jessup
+414,john-carroll,John Carroll,,JONCAR,ncaa,john-carroll
+415,john-jay,John Jay,,JONJAY,ncaa,john-jay
+416,johns-hopkins,Johns Hopkins,,HOPKNS,ncaa,johns-hopkins
+417,johnson-c-smith,Johnson C. Smith,,JCSMTH,ncaa,johnson-c-smith
+418,johnson-st,VTSU-Johnson,,JOHNST,ncaa,johnson-st
+419,johnson-wales-charlotte,JWU Charlotte,,,ncaa,johnson-wales-charlotte
+420,johnson-wales-ri,JWU (Providence),,JOWARI,ncaa,johnson-wales-ri
+421,juniata,Juniata,,JUNIAT,ncaa,juniata
+422,kalamazoo,Kalamazoo,,KALAMA,ncaa,kalamazoo
+423,kansas,Kansas,,KANSAS,ncaa,kansas
+424,kansas-st,Kansas St.,,KAN ST,ncaa,kansas-st
+425,kean,Kean,,KEAN,ncaa,kean
+426,keene-st,Keene St.,,KEENE,ncaa,keene-st
+427,kennesaw-st,Kennesaw St.,,KENSAW,ncaa,kennesaw-st
+428,kent-st,Kent St.,,KENT,ncaa,kent-st
+429,kentucky,Kentucky,,UK,ncaa,kentucky
+430,kentucky-st,Kentucky St.,,KY ST,ncaa,kentucky-st
+431,kenyon,Kenyon,,KENYON,ncaa,kenyon
+432,keuka,Keuka,,KEUKA,ncaa,keuka
+433,keystone,Keystone,,KEYSTN,ncaa,keystone
+434,king-tn,King (TN),,KINGTN,ncaa,king-tn
+435,kings-pa,King's (PA),,KINGPA,ncaa,kings-pa
+436,knox,Knox,,KNOX,ncaa,knox
+437,kutztown,Kutztown,,KUTZ,ncaa,kutztown
+438,ky-wesleyan,Ky. Wesleyan,,KY WES,ncaa,ky-wesleyan
+439,la-lafayette,Louisiana,,LA,ncaa,la-lafayette
+440,la-monroe,ULM,,LA MON,ncaa,la-monroe
+441,la-roche,La Roche,,LAROCH,ncaa,la-roche
+442,la-salle,La Salle,,LASALL,ncaa,la-salle
+443,la-verne,La Verne,,LAVERN,ncaa,la-verne
+444,lafayette,Lafayette,,LAFAYE,ncaa,lafayette
+445,lagrange,LaGrange,,LAGRAN,ncaa,lagrange
+446,lake-erie,Lake Erie,,LKERIE,ncaa,lake-erie
+447,lake-forest,Lake Forest,,LK FOR,ncaa,lake-forest
+448,lake-superior-st,Lake Superior St.,,LK SUP,ncaa,lake-superior-st
+449,lakeland,Lakeland,,LAKLND,ncaa,lakeland
+450,lamar,Lamar University,,LAMAR,ncaa,lamar
+451,lancaster-bible,Lancaster Bible,,LANBIB,ncaa,lancaster-bible
+452,lander,Lander,,LANDER,ncaa,lander
+453,lane,Lane,,LANE,ncaa,lane
+454,lasell,Lasell,,LASELL,ncaa,lasell
+455,lawrence,Lawrence,,LAWREN,ncaa,lawrence
+456,le-moyne,Le Moyne,,LEMOYN,ncaa,le-moyne
+457,lebanon-valley,Lebanon Valley,,LEBVAL,ncaa,lebanon-valley
+458,lee,Lee,,LEE,ncaa,lee
+459,lees-mcrae,Lees-McRae,,LEESMC,ncaa,lees-mcrae
+460,lehigh,Lehigh,,LEHIGH,ncaa,lehigh
+461,lehman,Lehman,,LEHMAN,ncaa,lehman
+462,lemoyne-owen,LeMoyne-Owen,,LEM OW,ncaa,lemoyne-owen
+463,lenoir-rhyne,Lenoir-Rhyne,,LENOIR,ncaa,lenoir-rhyne
+464,lesley,Lesley,,LESLEY,ncaa,lesley
+465,letourneau,LeTourneau,,LETOUR,ncaa,letourneau
+466,lewis,Lewis,,LEWIS,ncaa,lewis
+467,lewis-clark,Lewis & Clark,,LEWCLA,ncaa,lewis-clark
+468,liberty,Liberty,,LIBRTY,ncaa,liberty
+469,lincoln-memorial,Lincoln Memorial,,LNCMEM,ncaa,lincoln-memorial
+470,lincoln-mo,Lincoln (MO),,LINCMO,ncaa,lincoln-mo
+471,lincoln-pa,Lincoln (PA),,LINCPA,ncaa,lincoln-pa
+472,lindenwood-mo,Lindenwood,,LINWOD,ncaa,lindenwood-mo
+473,linfield,Linfield,,LINFLD,ncaa,linfield
+474,lipscomb,Lipscomb,,LIPSCO,ncaa,lipscomb
+475,livingstone,Livingstone,,LIVING,ncaa,livingstone
+476,lock-haven,Lock Haven,,LCKHAV,ncaa,lock-haven
+477,long-beach-st,Long Beach St.,,LBSU,ncaa,long-beach-st
+478,long-island,LIU,,LIU,ncaa,long-island
+479,longwood,Longwood,,LONGWD,ncaa,longwood
+480,loras,Loras,,LORAS,ncaa,loras
+481,louisiana-tech,Louisiana Tech,,LATECH,ncaa,louisiana-tech
+482,louisville,Louisville,,LOUIS,ncaa,louisville
+483,loyola-chicago,Loyola Chicago,,LOYCHI,ncaa,loyola-chicago
+484,loyola-maryland,Loyola Maryland,,LOY MD,ncaa,loyola-maryland
+485,loyola-marymount,LMU (CA),,LMU,ncaa,loyola-marymount
+486,lsu,LSU,,LSU,ncaa,lsu
+487,lubbock-christian,Lubbock Christian,,LUBCHR,ncaa,lubbock-christian
+488,luther,Luther,,LUTHER,ncaa,luther
+489,lycoming,Lycoming,,LYCOM,ncaa,lycoming
+490,lynchburg,Lynchburg,,LYN,ncaa,lynchburg
+491,lyndon-st,VTSU Lyndon,,LYNDON,ncaa,lyndon-st
+492,lynn,Lynn,,LYNN,ncaa,lynn
+493,lyon,Lyon,,LYON,ncaa,lyon
+494,macalester,Macalester,,MACALE,ncaa,macalester
+495,maine,Maine,,MAINE,ncaa,maine
+496,maine-maritime,Maine Maritime,,MEMARI,ncaa,maine-maritime
+497,malone,Malone,,MALONE,ncaa,malone
+498,manchester,Manchester,,MANCHS,ncaa,manchester
+499,manhattan,Manhattan,,MANHAT,ncaa,manhattan
+500,manhattanville,Manhattanville,,MANHTV,ncaa,manhattanville
+501,mansfield,Mansfield,,MNSFLD,ncaa,mansfield
+502,maranatha-baptist,Maranatha Baptist,,MARBAP,ncaa,maranatha-baptist
+503,marian-wi,Marian (WI),,MARIAN,ncaa,marian-wi
+504,marietta,Marietta,,MARIET,ncaa,marietta
+505,marist,Marist,,MARIST,ncaa,marist
+506,marquette,Marquette,,MARQ,ncaa,marquette
+507,mars-hill,Mars Hill,,MARHIL,ncaa,mars-hill
+508,marshall,Marshall,,MARSH,ncaa,marshall
+509,martin-luther,Martin Luther,,MARTLU,ncaa,martin-luther
+510,mary,Mary,,UMARY,ncaa,mary
+511,mary-baldwin,Mary Baldwin,,MARYBA,ncaa,mary-baldwin
+512,mary-hardin-baylor,Mary Hardin-Baylor,,MHARBA,ncaa,mary-hardin-baylor
+513,mary-washington,Mary Washington,,MARYWA,ncaa,mary-washington
+514,maryland,Maryland,,MD,ncaa,maryland
+515,marymount-va,Marymount (VA),,MARYVA,ncaa,marymount-va
+516,maryville-mo,Maryville (MO),,MARYMO,ncaa,maryville-mo
+517,maryville-tn,Maryville (TN),,MARYTN,ncaa,maryville-tn
+518,marywood,Marywood,,MARYWD,ncaa,marywood
+519,massachusetts,Massachusetts,,UMASS,ncaa,massachusetts
+520,mcdaniel,McDaniel,,MCDAN,ncaa,mcdaniel
+521,mckendree,McKendree,,MCKEND,ncaa,mckendree
+522,mcla,MCLA,,MCLA,ncaa,mcla
+523,mcmurry,McMurry,,MCMURR,ncaa,mcmurry
+524,mcneese,McNeese,,MCNEES,ncaa,mcneese
+525,me-farmington,Me.-Farmington,,MEFARM,ncaa,me-farmington
+526,me-presque-isle,Me.-Presque Isle,,ME PI,ncaa,me-presque-isle
+527,medgar-evers,Medgar Evers,,MEDGEV,ncaa,medgar-evers
+528,memphis,Memphis,,MEM,ncaa,memphis
+529,menlo,Menlo,,MENLO,ncaa,menlo
+530,merced,UC Merced,,,ncaa,merced
+531,mercer,Mercer,,MERCER,ncaa,mercer
+532,merchant-marine,Merchant Marine,,MERMAR,ncaa,merchant-marine
+533,mercy,Mercy,,MERCY,ncaa,mercy
+534,mercyhurst,Mercyhurst,,MERCYH,ncaa,mercyhurst
+535,merrimack,Merrimack,,MERMCK,ncaa,merrimack
+536,messiah,Messiah,,MESSIA,ncaa,messiah
+537,methodist,Methodist,,METHOD,ncaa,methodist
+538,metro-st,MSU Denver,,METRO,ncaa,metro-st
+539,miami-fl,Miami (FL),,MIAMI,ncaa,miami-fl
+540,miami-oh,Miami (OH),,MIA OH,ncaa,miami-oh
+541,michigan,Michigan,,MICH,ncaa,michigan
+542,michigan-st,Michigan St.,,MICHST,ncaa,michigan-st
+543,michigan-tech,Michigan Tech,,MITECH,ncaa,michigan-tech
+544,middle-georgia-st,Middle Georgia,,MDGST,ncaa,middle-georgia-st
+545,middle-tenn,Middle Tenn.,,MIDTEN,ncaa,middle-tenn
+546,middlebury,Middlebury,,MIDDLE,ncaa,middlebury
+547,midwestern-st,Midwestern St.,,MSU TX,ncaa,midwestern-st
+548,miles,Miles,,MILES,ncaa,miles
+549,millersville,Millersville,,MILLER,ncaa,millersville
+550,millikin,Millikin,,MILLIK,ncaa,millikin
+551,millsaps,Millsaps,,MLLSAP,ncaa,millsaps
+552,milwaukee,Milwaukee,,MILWKE,ncaa,milwaukee
+553,minn-crookston,Minn.-Crookston,,MNCROK,ncaa,minn-crookston
+554,minn-duluth,Minn. Duluth,,MN DUL,ncaa,minn-duluth
+555,minn-morris,Minn.-Morris,,MNMORR,ncaa,minn-morris
+556,minn-st-mankato,Minnesota St.,,MNSTMA,ncaa,minn-st-mankato
+557,minn-st-moorhead,MSU Moorhead,,MNSTMO,ncaa,minn-st-moorhead
+558,minnesota,Minnesota,,MINN,ncaa,minnesota
+559,minot-st,Minot St.,,MINOT,ncaa,minot-st
+560,misericordia,Misericordia,,MISERI,ncaa,misericordia
+561,mississippi-christ,Mississippi Christian,,MS COL,ncaa,mississippi-christ
+562,mississippi-st,Mississippi St.,,MISSST,ncaa,mississippi-st
+563,mississippi-val,Mississippi Val.,,MS VAL,ncaa,mississippi-val
+564,missouri,Missouri,,MIZZOU,ncaa,missouri
+565,missouri-snt,Missouri S&T,,MO S&T,ncaa,missouri-snt
+566,missouri-st,Missouri St.,,MO ST,ncaa,missouri-st
+567,mit,MIT,,MIT,ncaa,mit
+568,mitchell,Mitchell,,MITCH,ncaa,mitchell
+569,mo-southern-st,Mo. Southern St.,,MO SOU,ncaa,mo-southern-st
+570,mo-st-louis,Mo.-St. Louis,,UMSL,ncaa,mo-st-louis
+571,mo-western-st,Missouri Western,,MOWEST,ncaa,mo-western-st
+572,molloy,Molloy,,MOLLOY,ncaa,molloy
+573,monmouth,Monmouth,,MONMTH,ncaa,monmouth
+574,monmouth-il,Monmouth (IL),,MON IL,ncaa,monmouth-il
+575,mont-st-billings,Mont. St. Billings,,MT STB,ncaa,mont-st-billings
+576,montana,Montana,,MONT,ncaa,montana
+577,montana-st,Montana St.,,MONTST ,ncaa,montana-st
+578,montclair-st,Montclair St.,,MONTCL,ncaa,montclair-st
+579,montevallo,Montevallo,,MONTEV,ncaa,montevallo
+580,moravian,Moravian,,MORAV,ncaa,moravian
+581,morehead-st,Morehead St.,,MOREST,ncaa,morehead-st
+582,morehouse,Morehouse,,MORHSE,ncaa,morehouse
+583,morgan-st,Morgan St.,,MORGAN,ncaa,morgan-st
+584,morrisville-st,SUNY Morrisville,,MRVLST,ncaa,morrisville-st
+585,mount-olive,Mount Olive,,MT OLI,ncaa,mount-olive
+586,mount-union,Mount Union,,MT UNI,ncaa,mount-union
+587,msoe,MSOE,,MSOE,ncaa,msoe
+588,mt-aloysius,Mount Aloysius,,MT ALO,ncaa,mt-aloysius
+589,mt-st-joseph,Mt. St. Joseph,,MT STJ,ncaa,mt-st-joseph
+590,mt-st-mary-ny,Mt. St. Mary (NY),,MSM NY,ncaa,mt-st-mary-ny
+591,mt-st-marys,Mount St. Mary's,,MTSTMY,ncaa,mt-st-marys
+592,mt-st-vincent,UMSV,,MT STV,ncaa,mt-st-vincent
+593,muhlenberg,Muhlenberg,,MUHLEN,ncaa,muhlenberg
+594,murray-st,Murray St.,,MURRAY,ncaa,murray-st
+595,muskingum,Muskingum,,MUSKIN,ncaa,muskingum
+596,muw,MUW,,MUW,ncaa,muw
+597,navy,Navy,,NAVY,ncaa,navy
+598,nazareth,Nazareth,,NAZARE,ncaa,nazareth
+599,nc-at,N.C. A&T,,NC A&T,ncaa,nc-at
+600,nc-central,N.C. Central,,NC CEN,ncaa,nc-central
+601,nc-wesleyan,N.C. Wesleyan,,NC WES,ncaa,nc-wesleyan
+602,neb-kearney,Neb.-Kearney,,NEBKER,ncaa,neb-kearney
+603,neb-omaha,Omaha,,OMAHA,ncaa,neb-omaha
+604,neb-wesleyan,Neb. Wesleyan,,NEBWES,ncaa,neb-wesleyan
+605,nebraska,Nebraska,,NEB,ncaa,nebraska
+606,neumann,Neumann,,NEUMAN,ncaa,neumann
+607,nevada,Nevada,,NEVADA,ncaa,nevada
+608,new-england-col,New England Col.,,NE COL,ncaa,new-england-col
+609,new-hampshire,New Hampshire,,UNH,ncaa,new-hampshire
+610,new-haven,New Haven,,NEWHAV,ncaa,new-haven
+611,new-mexico,New Mexico,,N MEX,ncaa,new-mexico
+612,new-mexico-st,New Mexico St.,,NM ST,ncaa,new-mexico-st
+613,new-orleans,LSU New Orleans,,UNO,ncaa,new-orleans
+614,new-york-u,NYU,,NYU,ncaa,new-york-u
+615,newberry,Newberry,,NEWBER,ncaa,newberry
+616,newman,Newman,,NEWMAN,ncaa,newman
+617,niagara,Niagara,,NIAGRA,ncaa,niagara
+618,nicholls-st,Nicholls,,NICHST,ncaa,nicholls-st
+619,nichols,Nichols,,NICHOL,ncaa,nichols
+620,njit,NJIT,,NJIT,ncaa,njit
+621,nm-highlands,N.M. Highlands,,NMHU,ncaa,nm-highlands
+622,norfolk-st,Norfolk St.,,NORFLK,ncaa,norfolk-st
+623,north-ala,North Ala.,,N ALA,ncaa,north-ala
+624,north-carolina,North Carolina,,UNC,ncaa,north-carolina
+625,north-carolina-st,NC State,,NC ST,ncaa,north-carolina-st
+626,north-central-il,North Central (IL),,NC ILL,ncaa,north-central-il
+627,north-central-mn,North Central (MN),,NC MIN,ncaa,north-central-mn
+628,north-dakota,North Dakota,,NO DAK,ncaa,north-dakota
+629,north-dakota-st,North Dakota St.,,ND ST,ncaa,north-dakota-st
+630,north-florida,North Florida,,NO FLA,ncaa,north-florida
+631,north-georgia,North Georgia,,UNG,ncaa,north-georgia
+632,north-greenville,North Greenville,,NGU,ncaa,north-greenville
+633,north-park,North Park,,NO PRK,ncaa,north-park
+634,north-texas,North Texas,,NO TEX,ncaa,north-texas
+635,northeastern,Northeastern,,NOEAST,ncaa,northeastern
+636,northeastern-st,Northeastern St.,,NE ST,ncaa,northeastern-st
+637,northern-ariz,Northern Ariz.,,NAU,ncaa,northern-ariz
+638,northern-colo,Northern Colo.,,N COLO,ncaa,northern-colo
+639,northern-ill,NIU,,NIU,ncaa,northern-ill
+640,northern-ky,Northern Ky.,,N KY,ncaa,northern-ky
+641,northern-mich,Northern Mich.,,N MICH,ncaa,northern-mich
+642,northern-st,Northern St.,,NOR ST,ncaa,northern-st
+643,northwest-mo-st,Northwest Mo. St.,,NW MO,ncaa,northwest-mo-st
+644,northwest-nazarene,Northwest Nazarene,,NW NAZ,ncaa,northwest-nazarene
+645,northwestern,Northwestern,,NW,ncaa,northwestern
+646,northwestern-okla,Northwestern Okla.,,NWOKLA,ncaa,northwestern-okla
+647,northwestern-st,Northwestern St.,,NW ST,ncaa,northwestern-st
+648,northwestern-st-paul,Northwestern-St. Paul,,NWSTPL,ncaa,northwestern-st-paul
+649,northwood-mi,Northwood,,NWOOD,ncaa,northwood-mi
+650,norwich,Norwich,,NORWCH,ncaa,norwich
+651,notre-dame,Notre Dame,,N DAME,ncaa,notre-dame
+652,notre-dame-md,Notre Dame (MD),,ND MD,ncaa,notre-dame-md
+653,nova-southeastern,Nova Southeastern,,NOVASE,ncaa,nova-southeastern
+654,oakland,Oakland,,OAK,ncaa,oakland
+655,oberlin,Oberlin,,OBERLN,ncaa,oberlin
+656,occidental,Occidental,,OCCID,ncaa,occidental
+657,oglethorpe,Oglethorpe,,OGLETH,ncaa,oglethorpe
+658,ohio,Ohio,,OHIO,ncaa,ohio
+659,ohio-dominican,Ohio Dominican,,OH DOM,ncaa,ohio-dominican
+660,ohio-northern,Ohio Northern,,OHNRTN,ncaa,ohio-northern
+661,ohio-st,Ohio St.,,OHIOST,ncaa,ohio-st
+662,ohio-wesleyan,Ohio Wesleyan,,OH WES,ncaa,ohio-wesleyan
+663,okla-baptist,Okla. Baptist,,OK BAP,ncaa,okla-baptist
+664,okla-christian,Okla. Christian,,OK CHR,ncaa,okla-christian
+665,oklahoma,Oklahoma,,OKLA,ncaa,oklahoma
+666,oklahoma-st,Oklahoma St.,,OKLAST,ncaa,oklahoma-st
+667,old-dominion,Old Dominion,,ODU,ncaa,old-dominion
+668,old-westbury,Old Westbury,,OLDWES,ncaa,old-westbury
+669,ole-miss,Ole Miss,,MISS,ncaa,ole-miss
+670,olivet,Olivet,,OLIVET,ncaa,olivet
+671,oneonta-st,SUNY Oneonta,,ONEONT,ncaa,oneonta-st
+672,oral-roberts,Oral Roberts,,ORU,ncaa,oral-roberts
+673,oregon,Oregon,,OREGN,ncaa,oregon
+674,oregon-st,Oregon St.,,ORE ST,ncaa,oregon-st
+675,oswego-st,Oswego St.,,OSWEGO,ncaa,oswego-st
+676,otterbein,Otterbein,,OTTER,ncaa,otterbein
+677,ouachita-baptist,Ouachita Baptist,,OUABAP,ncaa,ouachita-baptist
+678,ozarks-ar,Ozarks (AR),,OZARKS,ncaa,ozarks-ar
+679,pace,Pace,,PACE,ncaa,pace
+680,pacific,Pacific,,PACIF,ncaa,pacific
+681,pacific-lutheran,Pacific Lutheran,,PAC LU,ncaa,pacific-lutheran
+682,pacific-or,Pacific (OR),,PAC OR,ncaa,pacific-or
+683,palm-beach-atl,Palm Beach Atl.,,PALMBA,ncaa,palm-beach-atl
+684,peace,William Peace,,PEACE,ncaa,peace
+685,penn,Penn,,PENN,ncaa,penn
+686,penn-st,Penn St.,,PENNST,ncaa,penn-st
+687,penn-st-abington,Penn St.-Abington,,PSU AB,ncaa,penn-st-abington
+688,penn-st-altoona,Penn St.-Altoona,,PSU AL,ncaa,penn-st-altoona
+689,penn-st-behrend,Penn St.-Behrend,,PSU BE,ncaa,penn-st-behrend
+690,penn-st-berks,Penn St.-Berks,,BERKS,ncaa,penn-st-berks
+691,penn-st-brandywine,Penn St. Brandywine,,,ncaa,penn-st-brandywine
+692,penn-st-harrisburg,Penn St. Harrisburg,,PSU HA,ncaa,penn-st-harrisburg
+693,penn-tech,Penn College,,PENCLG,ncaa,penn-tech
+694,pepperdine,Pepperdine,,PEPPER,ncaa,pepperdine
+695,pfeiffer,Pfeiffer,,PFEIFF,ncaa,pfeiffer
+696,philadelphia-u,Jefferson,,JEFFU,ncaa,philadelphia-u
+697,piedmont,Piedmont,,PIEDMT,ncaa,piedmont
+698,pitt-bradford,Pitt.-Bradford,,PITTBR,ncaa,pitt-bradford
+699,pitt-greensburg,Pitt.-Greensburg,,PITTGR,ncaa,pitt-greensburg
+700,pitt-johnstown,Pitt.-Johnstown,,PITTJO,ncaa,pitt-johnstown
+701,pittsburg-st,Pittsburg St.,,PITTST,ncaa,pittsburg-st
+702,pittsburgh,Pittsburgh,,PITT,ncaa,pittsburgh
+703,plattsburgh-st,Plattsburgh St.,,PLATTS,ncaa,plattsburgh-st
+704,plymouth-st,Plymouth St.,,PLYMOU,ncaa,plymouth-st
+705,point-loma,Point Loma,,PT LOM,ncaa,point-loma
+706,point-park,Point Park,,,ncaa,point-park
+707,pomona-pitzer,Pomona-Pitzer,,POMPIT,ncaa,pomona-pitzer
+708,portland,Portland,,PORT,ncaa,portland
+709,portland-st,Portland St.,,PORTST,ncaa,portland-st
+710,post,Post,,POST,ncaa,post
+711,pr-bayamon,P.R.-Bayamon,,PR BYM,ncaa,pr-bayamon
+712,pr-mayaguez,P.R.-Mayaguez,,PR MAY,ncaa,pr-mayaguez
+713,pr-rio-piedras,P.R.-Rio Piedras,,UPURRP,ncaa,pr-rio-piedras
+714,prairie-view,Prairie View,,PV A&M,ncaa,prairie-view
+715,pratt-institute,Pratt,,PRATT,ncaa,pratt-institute
+716,presbyterian,Presbyterian,,PRESBY,ncaa,presbyterian
+717,princeton,Princeton,,PRINCE,ncaa,princeton
+718,principia,Principia,,PRINCI,ncaa,principia
+719,providence,Providence,,PROV,ncaa,providence
+720,puget-sound,Puget Sound,,PUGSND,ncaa,puget-sound
+721,purchase-st,Purchase,,PURCH,ncaa,purchase-st
+722,purdue,Purdue,,PURDUE,ncaa,purdue
+723,purdue-northwest,Purdue Northwest,,PUR NW,ncaa,purdue-northwest
+724,queens-nc,Queens (NC),,QUENNC,ncaa,queens-nc
+725,queens-ny,Queens (NY),,QUENNY,ncaa,queens-ny
+726,quincy,Quincy,,QUINCY,ncaa,quincy
+727,quinnipiac,Quinnipiac,,QUINN,ncaa,quinnipiac
+728,radford,Radford,,RADFRD,ncaa,radford
+729,ramapo,Ramapo,,RAMAPO,ncaa,ramapo
+730,randolph,Randolph,,RANDOL,ncaa,randolph
+731,randolph-macon,Randolph-Macon,,RANMAC,ncaa,randolph-macon
+732,redlands,Redlands,,REDLAN,ncaa,redlands
+733,regent,Regent,,,ncaa,regent
+734,regis-co,Regis (CO),,REG CO,ncaa,regis-co
+735,regis-ma,Regis (MA),,REG MA,ncaa,regis-ma
+736,rensselaer,Rensselaer,,RPI,ncaa,rensselaer
+737,rhode-island,Rhode Island,,URI,ncaa,rhode-island
+738,rhode-island-col,Rhode Island Col.,,RI COL,ncaa,rhode-island-col
+739,rhodes,Rhodes,,RHODES,ncaa,rhodes
+740,rice,Rice,,RICE,ncaa,rice
+741,richard-stockton,Stockton,,RICHST,ncaa,richard-stockton
+742,richmond,Richmond,,RICH,ncaa,richmond
+743,rider,Rider,,RIDER,ncaa,rider
+744,ripon,Ripon,,RIPON,ncaa,ripon
+745,rivier,Rivier,,RIVIER,ncaa,rivier
+746,roanoke,Roanoke,,ROANOK,ncaa,roanoke
+747,robert-morris,Robert Morris,,ROBMOR,ncaa,robert-morris
+748,roberts-wesleyan,Roberts Wesleyan,,ROBWES,ncaa,roberts-wesleyan
+749,rochester-inst,RIT,,RIT,ncaa,rochester-inst
+750,rochester-ny,Rochester (NY),,ROCHNY,ncaa,rochester-ny
+751,rockford,Rockford,,ROCKFO,ncaa,rockford
+752,rockhurst,Rockhurst,,ROCKHU,ncaa,rockhurst
+753,roger-williams,Roger Williams,,ROGWIL,ncaa,roger-williams
+754,rogers-st,Rogers St.,,ROG ST,ncaa,rogers-st
+755,rollins,Rollins,,ROLLIN,ncaa,rollins
+756,roosevelt-university,Roosevelt,,,ncaa,roosevelt-university
+757,rose-hulman,Rose-Hulman,,ROSHUL,ncaa,rose-hulman
+758,rowan,Rowan,,ROWAN,ncaa,rowan
+759,rutgers,Rutgers,,RUTGER,ncaa,rutgers
+760,rutgers-camden,Rutgers-Camden,,RUTCAM,ncaa,rutgers-camden
+761,rutgers-newark,Rutgers-Newark,,RUTNEW,ncaa,rutgers-newark
+762,sacramento-st,Sacramento St.,,SAC ST,ncaa,sacramento-st
+763,sacred-heart,Sacred Heart,,SACHRT,ncaa,sacred-heart
+764,sage-colleges,Russell Sage,,SAGE,ncaa,sage-colleges
+765,saginaw-valley,Saginaw Valley,,SAGVAL,ncaa,saginaw-valley
+766,saint-johns-mn,Saint John's (MN),,STJOMN,ncaa,saint-johns-mn
+767,saint-josephs,Saint Joseph's,,STJOES,ncaa,saint-josephs
+768,saint-leo,Saint Leo,,ST LEO,ncaa,saint-leo
+769,saint-louis,Saint Louis,,ST LOU,ncaa,saint-louis
+770,saint-martins,Saint Martin's,,STMART,ncaa,saint-martins
+771,saint-michaels,Saint Michael's,,STMICH,ncaa,saint-michaels
+772,saint-vincent,Saint Vincent,,ST VIN,ncaa,saint-vincent
+773,salem-intl,Salem (WV),,SALINT,ncaa,salem-intl
+774,salem-st,Salem St.,,SAL ST,ncaa,salem-st
+775,salisbury,Salisbury,,SALISB,ncaa,salisbury
+776,salve-regina,Salve Regina,,SALVRE,ncaa,salve-regina
+777,sam-houston-st,Sam Houston,,SAMHOU,ncaa,sam-houston-st
+778,samford,Samford,,SAMFRD,ncaa,samford
+779,san-diego,San Diego,,USD,ncaa,san-diego
+780,san-diego-st,San Diego St.,,SDSU,ncaa,san-diego-st
+781,san-fran-st,San Fran. St.,,SF ST,ncaa,san-fran-st
+782,san-francisco,San Francisco,,S FRAN,ncaa,san-francisco
+783,san-jose-st,San Jose St.,,SJSU,ncaa,san-jose-st
+784,santa-clara,Santa Clara,,STCLAR,ncaa,santa-clara
+785,sarah-lawrence,Sarah Lawrence,,SRHLAW,ncaa,sarah-lawrence
+786,savannah-st,Savannah St.,,SAV ST,ncaa,savannah-st
+787,sc-aiken,USC Aiken,,SC AIK,ncaa,sc-aiken
+788,schreiner,Schreiner,,SCHREI,ncaa,schreiner
+789,scranton,Scranton,,SCRANT,ncaa,scranton
+790,seattle,Seattle U,,SEATTL,ncaa,seattle
+791,seattle-pacific,Seattle Pacific,,SEAPAC,ncaa,seattle-pacific
+792,seton-hall,Seton Hall,,SETON,ncaa,seton-hall
+793,seton-hill,Seton Hill,,SETHIL,ncaa,seton-hill
+794,sewanee,Sewanee,,SEWANE,ncaa,sewanee
+795,shaw,Shaw,,SHAW,ncaa,shaw
+796,shenandoah,Shenandoah,,SHEN,ncaa,shenandoah
+797,shepherd,Shepherd,,SHEPH,ncaa,shepherd
+798,shippensburg,Shippensburg,,SHIPPE,ncaa,shippensburg
+799,shorter,Shorter,,SHRTER,ncaa,shorter
+800,siena,Siena,,SIENA,ncaa,siena
+801,simon-fraser,Simon Fraser,,SIMFRA,ncaa,simon-fraser
+802,simpson,Simpson,,SIMPSN,ncaa,simpson
+803,sioux-falls,Sioux Falls,,SIOUX,ncaa,sioux-falls
+804,siu-edwardsville,SIUE,,SIUE,ncaa,siu-edwardsville
+805,skidmore,Skidmore,,SKIDMO,ncaa,skidmore
+806,slippery-rock,Slippery Rock,,SLIPRK,ncaa,slippery-rock
+807,smu,SMU,,SMU,ncaa,smu
+808,south-ala,South Alabama,,S ALA,ncaa,south-ala
+809,south-carolina,South Carolina,,S CAR,ncaa,south-carolina
+810,south-carolina-st,South Carolina St.,,SC ST,ncaa,south-carolina-st
+811,south-dakota,South Dakota,,SO DAK,ncaa,south-dakota
+812,south-dakota-mines,South Dakota Mines,,SDMINE,ncaa,south-dakota-mines
+813,south-dakota-st,South Dakota St.,,SDAKST,ncaa,south-dakota-st
+814,south-fla,South Fla.,,USF,ncaa,south-fla
+815,southeast-mo-st,Southeast Mo. St.,,SEMO,ncaa,southeast-mo-st
+816,southeastern-la,Southeastern La.,,SE LA,ncaa,southeastern-la
+817,southeastern-okla,Southeastern Okla.,,SE OK,ncaa,southeastern-okla
+818,southern-ark,Southern Ark.,,S ARK,ncaa,southern-ark
+819,southern-california,Southern California,,USC,ncaa,southern-california
+820,southern-conn-st,Southern Conn. St.,,SOCONN,ncaa,southern-conn-st
+821,southern-ill,Southern Ill.,,SIU,ncaa,southern-ill
+822,southern-ind,Southern Ind.,,S IND,ncaa,southern-ind
+823,southern-me,Southern Me.,,S ME,ncaa,southern-me
+824,southern-miss,Southern Miss.,,S MISS,ncaa,southern-miss
+825,southern-nazarene,Southern Nazarene,,S NAZ,ncaa,southern-nazarene
+826,southern-nh,Southern N.H.,,S NH,ncaa,southern-nh
+827,southern-u,Southern U.,,SOUTHR,ncaa,southern-u
+828,southern-utah,Southern Utah,,S UTAH,ncaa,southern-utah
+829,southern-va,Southern Va.,,SO VA,ncaa,southern-va
+830,southern-wesleyan,Southern Wesleyan,,S WESL,ncaa,southern-wesleyan
+831,southwest-baptist,Southwest Baptist,,SW BAP,ncaa,southwest-baptist
+832,southwest-minn-st,Southwest Minn. St.,,SW MN,ncaa,southwest-minn-st
+833,southwestern-okla,Southwestern Okla.,,SW OK,ncaa,southwestern-okla
+834,southwestern-tx,Southwestern (TX),,SW TX,ncaa,southwestern-tx
+835,spalding,Spalding,,SPALD,ncaa,spalding
+836,spring-hill,Spring Hill,,SPRHLL,ncaa,spring-hill
+837,springfield,Springfield,,SPRING,ncaa,springfield
+838,st-anselm,Saint Anselm,,STANSL,ncaa,st-anselm
+839,st-bonaventure,St. Bonaventure,,STBONA,ncaa,st-bonaventure
+840,st-cloud-st,St. Cloud St.,,SCSU,ncaa,st-cloud-st
+841,st-edwards,St. Edward's,,ST EDW,ncaa,st-edwards
+842,st-elizabeth,Saint Elizabeth,,STELIZ,ncaa,st-elizabeth
+843,st-francis-pa,Saint Francis,,STFRPA,ncaa,st-francis-pa
+844,st-john-fisher,St. John Fisher,,STJOFI,ncaa,st-john-fisher
+845,st-johns-ny,St. John's (NY),,STJOHN,ncaa,st-johns-ny
+846,st-joseph-ct,Saint Joseph (CT),,STJOCT,ncaa,st-joseph-ct
+847,st-josephs-brkln,St. Joseph's (Brkln),,STJOBR,ncaa,st-josephs-brkln
+848,st-josephs-li,St. Joseph's (L.I.),,STJOLI,ncaa,st-josephs-li
+849,st-josephs-me,St. Joseph's (ME),,STJOME,ncaa,st-josephs-me
+850,st-lawrence,St. Lawrence,,ST LAW,ncaa,st-lawrence
+851,st-marys-ca,Saint Mary's (CA),,STMARY,ncaa,st-marys-ca
+852,st-marys-md,St. Mary's (MD),,STMYMD,ncaa,st-marys-md
+853,st-marys-mn,Saint Mary's (MN),,STMYMN,ncaa,st-marys-mn
+854,st-marys-tx,St. Mary's (TX),,STMYTX,ncaa,st-marys-tx
+855,st-norbert,St. Norbert,,STNORB,ncaa,st-norbert
+856,st-olaf,St. Olaf,,STOLAF,ncaa,st-olaf
+857,st-peters,Saint Peter's,,ST PTR,ncaa,st-peters
+858,st-scholastica,St. Scholastica,,STSCHO,ncaa,st-scholastica
+859,st-thomas-aquinas,St. Thomas Aquinas,,STTAQN,ncaa,st-thomas-aquinas
+860,st-thomas-mn,St. Thomas (MN),,STTHOM,ncaa,st-thomas-mn
+861,st-thomas-tx,St. Thomas (TX),,ST THOM,ncaa,st-thomas-tx
+862,stanford,Stanford,,STAN,ncaa,stanford
+863,staten-island,Staten Island,,STATEN,ncaa,staten-island
+864,stephen-f-austin,SFA,,SFA,ncaa,stephen-f-austin
+865,stetson,Stetson,,STETSN,ncaa,stetson
+866,stevens,Stevens,,STEVEN,ncaa,stevens
+867,stevenson,Stevenson,,STEVE,ncaa,stevenson
+868,stonehill,Stonehill,,STONEH,ncaa,stonehill
+869,stony-brook,Stony Brook,,STONY,ncaa,stony-brook
+870,suffolk,Suffolk,,SUFFLK,ncaa,suffolk
+871,sul-ross-st,Sul Ross St.,,SULROS,ncaa,sul-ross-st
+872,suny-canton,SUNY Canton,,CANTON,ncaa,suny-canton
+873,suny-cortland,Cortland,,CORT,ncaa,suny-cortland
+874,suny-delhi,SUNY Delhi,,SUNY D,ncaa,suny-delhi
+875,suny-geneseo,SUNY Geneseo,,SUNYGE,ncaa,suny-geneseo
+876,suny-maritime,SUNY Maritime,,SUNYMA,ncaa,suny-maritime
+877,suny-new-paltz,SUNY New Paltz,,SUNYNP,ncaa,suny-new-paltz
+878,suny-potsdam,SUNY Potsdam,,SUNYPO,ncaa,suny-potsdam
+879,sunyit,SUNY Poly,,SUNYIT,ncaa,sunyit
+880,susquehanna,Susquehanna,,SUSQUE,ncaa,susquehanna
+881,swarthmore,Swarthmore,,SWARTH,ncaa,swarthmore
+882,syracuse,Syracuse,,SYR,ncaa,syracuse
+883,tampa,Tampa,,TAMPA,ncaa,tampa
+884,tarleton-st,Tarleton St.,,TARLET,ncaa,tarleton-st
+885,tcnj,TCNJ,,TCNJ,ncaa,tcnj
+886,tcu,TCU,,TCU,ncaa,tcu
+887,temple,Temple,,TEMPLE,ncaa,temple
+888,tennessee,Tennessee,,TENN,ncaa,tennessee
+889,tennessee-st,Tennessee St.,,TENNST,ncaa,tennessee-st
+890,tennessee-tech,Tennessee Tech,,TNTECH,ncaa,tennessee-tech
+891,tex-am-commerce,East Texas A&M,,TAMUCO,ncaa,tex-am-commerce
+892,tex-am-intl,Tex. A&M Int'l,,TAMUIN,ncaa,tex-am-intl
+893,tex-am-kingsville,Tex. A&M-Kingsville,,TAMUK,ncaa,tex-am-kingsville
+894,tex-permian-basin,UT Permian Basin,,TX PER,ncaa,tex-permian-basin
+895,texas,Texas,,TEXAS,ncaa,texas
+896,texas-am,Texas A&M,,TX A&M,ncaa,texas-am
+897,texas-arlington,UT Arlington,,TX ARL,ncaa,texas-arlington
+898,texas-dallas,UT Dallas,,TX DAL,ncaa,texas-dallas
+899,texas-lutheran,Texas Lutheran,,TX LUT,ncaa,texas-lutheran
+900,texas-southern,Texas Southern,,TX SOU,ncaa,texas-southern
+901,texas-st,Texas St.,,TX ST,ncaa,texas-st
+902,texas-tech,Texas Tech,,TXTECH,ncaa,texas-tech
+903,texas-tyler,UT Tyler,,TX TYL,ncaa,texas-tyler
+904,thiel,Thiel,,THIEL,ncaa,thiel
+905,thomas-me,Thomas (ME),,THOMAS,ncaa,thomas-me
+906,thomas-more,Thomas More,,TOMMOR,ncaa,thomas-more
+907,tiffin,Tiffin,,TIFFIN,ncaa,tiffin
+908,toledo,Toledo,,TOLEDO,ncaa,toledo
+909,towson,Towson,,TOWSON,ncaa,towson
+910,transylvania,Transylvania,,TRNSYL,ncaa,transylvania
+911,trevecca-nazarene,Trevecca Nazarene,,TRVNAZ,ncaa,trevecca-nazarene
+912,trine,Trine,,TRINE,ncaa,trine
+913,trinity-ct,Trinity (CT),,TRINCT,ncaa,trinity-ct
+914,trinity-tx,Trinity (TX),,TRINTX,ncaa,trinity-tx
+915,troy,Troy,,TROY,ncaa,troy
+916,truman,Truman St.,,TRUMAN,ncaa,truman
+917,tufts,Tufts,,TUFTS,ncaa,tufts
+918,tulane,Tulane,,TULANE,ncaa,tulane
+919,tulsa,Tulsa,,TULSA,ncaa,tulsa
+920,tusculum,Tusculum,,TUSCUL,ncaa,tusculum
+921,tuskegee,Tuskegee,,TUSK,ncaa,tuskegee
+922,u-new-england,U New England,,NEWENG,ncaa,u-new-england
+923,uab,UAB,,UAB,ncaa,uab
+924,ualr,Little Rock,,UALR,ncaa,ualr
+925,uc-colo-springs,UCCS,,UC CS,ncaa,uc-colo-springs
+926,uc-davis,UC Davis,,UC DAV,ncaa,uc-davis
+927,uc-irvine,UC Irvine,,UC IRV,ncaa,uc-irvine
+928,uc-riverside,UC Riverside,,UC RIV,ncaa,uc-riverside
+929,uc-san-diego,UC San Diego,,UCSD,ncaa,uc-san-diego
+930,uc-santa-barbara,UC Santa Barbara,,UCSB,ncaa,uc-santa-barbara
+931,uc-santa-cruz,UC Santa Cruz,,UCSC,ncaa,uc-santa-cruz
+932,ucf,UCF,,UCF,ncaa,ucf
+933,ucla,UCLA,,UCLA,ncaa,ucla
+934,uconn,UConn,,UCONN,ncaa,uconn
+935,uiw,UIW,,INCWRD,ncaa,uiw
+936,umass-boston,UMass Boston,,UMASSB,ncaa,umass-boston
+937,umass-dartmouth,UMass Dartmouth,,UMASSD,ncaa,umass-dartmouth
+938,umass-lowell,UMass Lowell,,UMASSL,ncaa,umass-lowell
+939,umbc,UMBC,,UMBC,ncaa,umbc
+940,umes,UMES,,UMES,ncaa,umes
+941,umkc,Kansas City,,KC,ncaa,umkc
+942,unc-asheville,UNC Asheville,,UNC A,ncaa,unc-asheville
+943,unc-greensboro,UNC Greensboro,,UNC G,ncaa,unc-greensboro
+944,unc-pembroke,UNC Pembroke,,UNC P,ncaa,unc-pembroke
+945,unc-wilmington,UNCW,,UNCW,ncaa,unc-wilmington
+946,uni,UNI,,N IOWA,ncaa,uni
+947,union-ny,Union (NY),,UNION,ncaa,union-ny
+948,union-tn,Union (TN),,UNIOTN,ncaa,union-tn
+949,unlv,UNLV,,UNLV,ncaa,unlv
+950,upper-iowa,Upper Iowa,,UPP IA,ncaa,upper-iowa
+951,ursinus,Ursinus,,URSNUS,ncaa,ursinus
+952,usc-beaufort,USC Beaufort,,USCBEA,ncaa,usc-beaufort
+953,usc-upstate,USC Upstate,,SC UPS,ncaa,usc-upstate
+954,ut-martin,UT Martin,,UT MAR,ncaa,ut-martin
+955,utah,Utah,,UTAH,ncaa,utah
+956,utah-st,Utah St.,,UT ST,ncaa,utah-st
+957,utah-tech,Utah Tech,,UTTECH,ncaa,utah-tech
+958,utah-valley,Utah Valley,,UT VAL,ncaa,utah-valley
+959,utep,UTEP,,UTEP,ncaa,utep
+960,utica,Utica,,UTICA,ncaa,utica
+961,utrgv,UTRGV,,UTRGV,ncaa,utrgv
+962,utsa,UTSA,,UTSA,ncaa,utsa
+963,uva-wise,UVA Wise,,VAWISE,ncaa,uva-wise
+964,va-wesleyan,Batten,,BATTEN,ncaa,va-wesleyan
+965,valdosta-st,Valdosta St.,,VAL ST,ncaa,valdosta-st
+966,valparaiso,Valparaiso,,VALPO,ncaa,valparaiso
+967,vanderbilt,Vanderbilt,,VANDY,ncaa,vanderbilt
+968,vanguard,Vanguard,,,ncaa,vanguard
+969,vassar,Vassar,,VASSAR,ncaa,vassar
+970,vcu,VCU,,VCU,ncaa,vcu
+971,vermont,Vermont,,VERMNT,ncaa,vermont
+972,villanova,Villanova,,NOVA,ncaa,villanova
+973,virginia,Virginia,,UVA,ncaa,virginia
+974,virginia-st,Virginia St.,,VA ST,ncaa,virginia-st
+975,virginia-tech,Virginia Tech,,VT,ncaa,virginia-tech
+976,virginia-union,Virginia Union,,VA UNI,ncaa,virginia-union
+977,vmi,VMI,,VMI,ncaa,vmi
+978,wabash,Wabash,,WABASH,ncaa,wabash
+979,wagner,Wagner,,WAGNER,ncaa,wagner
+980,wake-forest,Wake Forest,,WAKE,ncaa,wake-forest
+981,walsh,Walsh,,WALSH,ncaa,walsh
+982,warren-wilson-college,Warren Wilson,,WARREN,ncaa,warren-wilson-college
+983,wartburg,Wartburg,,WRTBRG,ncaa,wartburg
+984,wash-jeff,Wash. & Jeff.,,WAJEFF,ncaa,wash-jeff
+985,wash-lee,Wash. & Lee,,WASLEE,ncaa,wash-lee
+986,washburn,Washburn,,WSHBRN,ncaa,washburn
+987,washington,Washington,,WASH,ncaa,washington
+988,washington-col,Washington Col.,,WASHMD,ncaa,washington-col
+989,washington-st,Washington St.,,WASHST,ncaa,washington-st
+990,washington-st-louis,WashU,,WA STL,ncaa,washington-st-louis
+991,wayne-st-mi,Wayne St. (MI),,WAYSMI,ncaa,wayne-st-mi
+992,wayne-st-ne,Wayne St. (NE),,WAYSNE,ncaa,wayne-st-ne
+993,waynesburg,Waynesburg,,WAYNES,ncaa,waynesburg
+994,weber-st,Weber St.,,WEB ST,ncaa,weber-st
+995,webster,Webster,,WEBSTE,ncaa,webster
+996,wentworth,Wentworth,,WENTWO,ncaa,wentworth
+997,wesleyan-ct,Wesleyan (CT),,WES CT,ncaa,wesleyan-ct
+998,west-ala,West Ala.,,W ALA,ncaa,west-ala
+999,west-chester,West Chester,,W CHES,ncaa,west-chester
+1000,west-florida,West Florida,,W FLA,ncaa,west-florida
+1001,west-ga,West Ga.,,W GA,ncaa,west-ga
+1002,west-liberty,West Liberty,,W LIB,ncaa,west-liberty
+1003,west-tex-am,West Tex. A&M,,WTXA&M,ncaa,west-tex-am
+1004,west-va-wesleyan,West Va. Wesleyan,,WVAWES,ncaa,west-va-wesleyan
+1005,west-virginia,West Virginia,,WVU,ncaa,west-virginia
+1006,west-virginia-st,West Virginia St.,,WVA ST,ncaa,west-virginia-st
+1007,western-caro,Western Caro.,,W CAR,ncaa,western-caro
+1008,western-conn-st,WestConn,,W CONN,ncaa,western-conn-st
+1009,western-ill,Western Ill.,,W ILL,ncaa,western-ill
+1010,western-ky,Western Ky.,,W KY,ncaa,western-ky
+1011,western-mich,Western Mich.,,W MICH,ncaa,western-mich
+1012,western-new-eng,Western New Eng.,,W NE,ncaa,western-new-eng
+1013,western-nm,Western N.M.,,W NM,ncaa,western-nm
+1014,western-ore,Western Ore.,,W ORE,ncaa,western-ore
+1015,western-st,Western Colo.,,WESTST,ncaa,western-st
+1016,western-wash,Western Wash.,,W WASH,ncaa,western-wash
+1017,westfield-st,Westfield St.,,WESTFS,ncaa,westfield-st
+1018,westminster-mo,Westminster (MO),,WESTMO,ncaa,westminster-mo
+1019,westminster-pa,Westminster (PA),,WESTPA,ncaa,westminster-pa
+1020,westminster-ut,Westminster (UT),,WESTMI,ncaa,westminster-ut
+1021,westmont-college,Westmont,,WEMONT,ncaa,westmont-college
+1022,wheaton-il,Wheaton (IL),,WHEATI,ncaa,wheaton-il
+1023,wheaton-ma,Wheaton (MA),,WHEATM,ncaa,wheaton-ma
+1024,wheeling-jesuit,Wheeling,,WHEELJ,ncaa,wheeling-jesuit
+1025,whitman,Whitman,,WHITMA,ncaa,whitman
+1026,whittier,Whittier,,WHITTI,ncaa,whittier
+1027,whitworth,Whitworth,,WHITWO,ncaa,whitworth
+1028,wichita-st,Wichita St.,,WICHST,ncaa,wichita-st
+1029,widener,Widener,,WIDEN,ncaa,widener
+1030,wilkes,Wilkes,,WILKES,ncaa,wilkes
+1031,willamette,Willamette,,WMETTE,ncaa,willamette
+1032,william-jewell,William Jewell,,WILJEC,ncaa,william-jewell
+1033,william-mary,William & Mary,,WM&MRY,ncaa,william-mary
+1034,williams,Williams,,WILLIA,ncaa,williams
+1035,wilmington-de,Wilmington (DE),,WILMDE,ncaa,wilmington-de
+1036,wilmington-oh,Wilmington (OH),,WILMOH,ncaa,wilmington-oh
+1037,wilson,Wilson,,WILSON,ncaa,wilson
+1038,wingate,Wingate,,WINGAT,ncaa,wingate
+1039,winona-st,Winona St.,,WINONA,ncaa,winona-st
+1040,winston-salem,Winston-Salem,,WINSAL,ncaa,winston-salem
+1041,winthrop,Winthrop,,WINTHR,ncaa,winthrop
+1042,wis-eau-claire,Wis.-Eau Claire,,UW EC,ncaa,wis-eau-claire
+1043,wis-la-crosse,Wis.-La Crosse,,UW LAC,ncaa,wis-la-crosse
+1044,wis-lutheran,Wis. Lutheran,,WI LUT,ncaa,wis-lutheran
+1045,wis-oshkosh,Wis.-Oshkosh,,UW OSH,ncaa,wis-oshkosh
+1046,wis-parkside,Wis.-Parkside,,UW PAR,ncaa,wis-parkside
+1047,wis-platteville,Wis.-Platteville,,UW PLA,ncaa,wis-platteville
+1048,wis-river-falls,UW-River Falls,,UW RF,ncaa,wis-river-falls
+1049,wis-stevens-point,Wis.-Stevens Point,,UW SP,ncaa,wis-stevens-point
+1050,wis-stout,Wis.-Stout,,UW ST,ncaa,wis-stout
+1051,wis-superior,Wis.-Superior,,UW SUP,ncaa,wis-superior
+1052,wis-whitewater,Wis.-Whitewater,,UW WW,ncaa,wis-whitewater
+1053,wisconsin,Wisconsin,,WISC,ncaa,wisconsin
+1054,wittenberg,Wittenberg,,WITTEN,ncaa,wittenberg
+1055,wm-paterson,Wm. Paterson,,WM PAT,ncaa,wm-paterson
+1056,wofford,Wofford,,WOFFRD,ncaa,wofford
+1057,wooster,Wooster,,WOOSTR,ncaa,wooster
+1058,worcester-st,Worcester St.,,WORCST,ncaa,worcester-st
+1059,wpi,WPI,,WPI,ncaa,wpi
+1060,wright-st,Wright St.,,WRIGHT,ncaa,wright-st
+1061,wyoming,Wyoming,,WYO,ncaa,wyoming
+1062,xavier,Xavier,,XAVIER,ncaa,xavier
+1063,yale,Yale,,YALE,ncaa,yale
+1064,yeshiva,Yeshiva,,YESHIV,ncaa,yeshiva
+1065,york-ny,York (NY),,YORKNY,ncaa,york-ny
+1066,york-pa,York (PA),,YORKPA,ncaa,york-pa
+1067,young-harris,Young Harris,,YHARR,ncaa,young-harris
+1068,youngstown-st,Youngstown St.,,YSU,ncaa,youngstown-st
+1069,abraham-baldwin,Abraham Baldwin,,,non-ncaa,abraham-baldwin
+1070,albany-pharmacy,Albany Pharmacy,,,non-ncaa,albany-pharmacy
+1071,algoma-can,Algoma (CAN),,,non-ncaa,algoma-can
+1072,alice-lloyd,Alice Lloyd,,ALCLYD,non-ncaa,alice-lloyd
+1073,amer-indian-bib,SAGU American Indian,,,non-ncaa,amer-indian-bib
+1074,andrews,Andrews (MI),,,non-ncaa,andrews
+1075,appalachian-bible,Appalachian Bible,,,non-ncaa,appalachian-bible
+1076,apprentice,Apprentice,,APPRNT,non-ncaa,apprentice
+1077,aquinas,Aquinas,,,non-ncaa,aquinas
+1078,ark-baptist,Ark. Baptist,,,non-ncaa,ark-baptist
+1079,arlington-baptist,Arlington Baptist,,AR BAP,non-ncaa,arlington-baptist
+1080,avila,Avila,,AVILA,non-ncaa,avila
+1081,baptist-bible-mo,Mission U.,,,non-ncaa,baptist-bible-mo
+1082,barclay,Barclay,,,non-ncaa,barclay
+1083,bellevue,Bellevue,,,non-ncaa,bellevue
+1084,benedictine-mesa,Benedictine Mesa,,BNMESA,non-ncaa,benedictine-mesa
+1085,bethany-ks,Bethany (KS),,,non-ncaa,bethany-ks
+1086,bethel-ks,Bethel (KS),,,non-ncaa,bethel-ks
+1087,bethel-tn,Bethel (TN),,BTHLTN,non-ncaa,bethel-tn
+1088,bethesda-christian,Bethesda (CA),,BETCHS,non-ncaa,bethesda-christian
+1089,biblical-stud-tx,Biblical Stud. (TX),,,non-ncaa,biblical-stud-tx
+1090,blue-mountain,Blue Mountain (MS),,BLUMTN,non-ncaa,blue-mountain
+1091,bluefield-col,Bluefield Univ.,,BL COL,non-ncaa,bluefield-col
+1092,bob-jones,Bob Jones,,BOB JO,non-ncaa,bob-jones
+1093,boyce,Boyce,,,non-ncaa,boyce
+1094,brescia,Brescia,,BRESCI,non-ncaa,brescia
+1095,brewton-parker,Brewton-Parker,,BREWPK,non-ncaa,brewton-parker
+1096,briar-cliff-ia,Briar Cliff (IA),,BRIARC,non-ncaa,briar-cliff-ia
+1097,british-colum-can,British Colum. (CAN),,,non-ncaa,british-colum-can
+1098,bry-strat-alb,Bry. & Strat. (Alb.),,,non-ncaa,bry-strat-alb
+1099,bry-strat-roc,Bry. & Strat. (Roc.),,,non-ncaa,bry-strat-roc
+1100,bryan,Bryan,,,non-ncaa,bryan
+1101,bryant-stratton,Bry. & Strat. (Buf.),,,non-ncaa,bryant-stratton
+1102,cal-maritime,Cal Maritime,,CALMAR,non-ncaa,cal-maritime
+1103,calumet-col,Calumet Col.,,,non-ncaa,calumet-col
+1104,calvary-bible,Calvary,,,non-ncaa,calvary-bible
+1105,campbellsville,Campbellsville,,,non-ncaa,campbellsville
+1106,carolina-christian,Carolina Christian,,,non-ncaa,carolina-christian
+1107,carroll-mt,Carroll (MT),,CARRMT,non-ncaa,carroll-mt
+1108,cent-christian-mo,Central Chris. Bible,,,non-ncaa,cent-christian-mo
+1109,central-baptist,Central Baptist,,CENBAP,non-ncaa,central-baptist
+1110,central-penn,Central Penn,,CENPEN,non-ncaa,central-penn
+1111,champion-bapt,Champion Chris.,,CHBAP,non-ncaa,champion-bapt
+1112,cheyney,Cheyney,,,non-ncaa,cheyney
+1113,christendom,Christendom,,,non-ncaa,christendom
+1114,clarke,Clarke,,CLARKE,non-ncaa,clarke
+1115,cleary,Cleary,,,non-ncaa,cleary
+1116,clinton,Clinton,,,non-ncaa,clinton
+1117,coastal-ga,Coastal Ga.,,CSTGEO,non-ncaa,coastal-ga
+1118,col-of-idaho,Col. of Idaho,,COL ID,non-ncaa,col-of-idaho
+1119,columbia-college,Columbia (SC),,COLUMC,non-ncaa,columbia-college
+1120,columbia-international,Columbia Int'l,,COLINT,non-ncaa,columbia-international
+1121,columbia-mo,Columbia (MO),,,non-ncaa,columbia-mo
+1122,concordia-ne,Concordia (NE),,CONCNE,non-ncaa,concordia-ne
+1123,corban,Corban,,CORBAN,non-ncaa,corban
+1124,cornerstone,Cornerstone,,,non-ncaa,cornerstone
+1125,crowleys-ridge,Crowley's Ridge,,CRORDG,non-ncaa,crowleys-ridge
+1126,crown-tn,Crown (TN),,DEAN,non-ncaa,crown-tn
+1127,culver-stockton,Culver-Stockton,,CULSTO,non-ncaa,culver-stockton
+1128,cumberland-tn,Cumberland (TN),,CUMBER,non-ncaa,cumberland-tn
+1129,cumberlands-ky,Cumberlands (KY),,,non-ncaa,cumberlands-ky
+1130,dakota-st,Dakota St.,,DAKST,non-ncaa,dakota-st
+1131,dakota-wesleyan,Dakota Wesleyan,,DAKWES,non-ncaa,dakota-wesleyan
+1132,dallas-christian,Dallas Christian,,DALCHR,non-ncaa,dallas-christian
+1133,dalton-st,Dalton St.,,DALTON,non-ncaa,dalton-st
+1134,dayspring-bible,Dayspring Bible,,,non-ncaa,dayspring-bible
+1135,defiance,Defiance,,,non-ncaa,defiance
+1136,dickinson-state,Dickinson St.,,DKSNST,non-ncaa,dickinson-state
+1137,dillard,Dillard,,DILLRD,non-ncaa,dillard
+1138,doane,Doane,,DOANE,non-ncaa,doane
+1139,douglas-can,Douglas (CAN),,,non-ncaa,douglas-can
+1140,east-all-stars,Grace (CA),,,non-ncaa,east-all-stars
+1141,east-west-u,East-West U.,,,non-ncaa,east-west-u
+1142,eastern-ore,Eastern Ore.,,,non-ncaa,eastern-ore
+1143,ecclesia,Ecclesia,,ECCLES,non-ncaa,ecclesia
+1144,embry-riddle-az,Embry-Riddle (AZ),,,non-ncaa,embry-riddle-az
+1145,emmaus,Emmaus,,,non-ncaa,emmaus
+1146,evangel,Evangel,,EVANGL,non-ncaa,evangel
+1147,evergreen-state,Evergreen St.,,EVGRST,non-ncaa,evergreen-state
+1148,faith-bapt-bible,Faith Bapt. Bible,,,non-ncaa,faith-bapt-bible
+1149,fanshawe-can,Fanshawe (CAN),,,non-ncaa,fanshawe-can
+1150,fisher,Fisher,,FISHER,non-ncaa,fisher
+1151,fisk,Fisk,,FISK,non-ncaa,fisk
+1152,five-towns,Five Towns,,,non-ncaa,five-towns
+1153,fla-national,Fla. National,,FLANAT,non-ncaa,fla-national
+1154,florida-mem,Fla. Memorial,,FLAMEM,non-ncaa,florida-mem
+1155,fort-lauderdale,Fort Lauderdale,,,non-ncaa,fort-lauderdale
+1156,friends,Friends,,,non-ncaa,friends
+1157,georgia-gwinnett,Georgia Gwinnett,,,non-ncaa,georgia-gwinnett
+1158,goshen,Goshen,,GOSHEN,non-ncaa,goshen
+1159,grace-bible-college,Grace Christian (MI),,GRCBBL,non-ncaa,grace-bible-college
+1160,great-falls,Providence (MT),,GFALLS,non-ncaa,great-falls
+1161,great-lake-christian,Great Lake Christian,,,non-ncaa,great-lake-christian
+1162,hannibal-la-grange,Hannibal-La Grange,,HANNIB,non-ncaa,hannibal-la-grange
+1163,harris-stowe,Harris-Stowe,,HARSTW,non-ncaa,harris-stowe
+1164,haskell,Haskell,,HASKL,non-ncaa,haskell
+1165,hastings,Hastings,,HASTIN,non-ncaa,hastings
+1166,hillsdale-baptist,Randall,,HLSBAP,non-ncaa,hillsdale-baptist
+1167,holy-cross-in,Holy Cross (IN),,HOLYIN,non-ncaa,holy-cross-in
+1168,huston-tillotson,Huston-Tillotson,,HUSTIL,non-ncaa,huston-tillotson
+1169,ind-south-bend,Ind.-South Bend,,,non-ncaa,ind-south-bend
+1170,indiana-east,Ind.-East,,IND E,non-ncaa,indiana-east
+1171,indiana-kokomo,Ind.-Kokomo,,INDKOK,non-ncaa,indiana-kokomo
+1172,indiana-northwest,Ind.-Northwest,,IND NW,non-ncaa,indiana-northwest
+1173,indiana-southeast,Ind.-Southeast,,IND SE,non-ncaa,indiana-southeast
+1174,iupu-columbus,IU Columbus,,,non-ncaa,iupu-columbus
+1175,jarvis-christian,Jarvis Christian,,JARCHR,non-ncaa,jarvis-christian
+1176,john-brown,John Brown,,,non-ncaa,john-brown
+1177,judson-il,Judson (IL),,,non-ncaa,judson-il
+1178,justice-col,Justice U.,,,non-ncaa,justice-col
+1179,kan-wesleyan,Kan. Wesleyan,,,non-ncaa,kan-wesleyan
+1180,kansas-city-bible,Kansas Christian,,,non-ncaa,kansas-city-bible
+1181,kent-st-tuscarawas,Kent St.-Tuscarawas,,KNTTUS,non-ncaa,kent-st-tuscarawas
+1182,kuyper,Kuyper,,,non-ncaa,kuyper
+1183,ky-christian,Ky. Christian,,KY CHR,non-ncaa,ky-christian
+1184,la-sierra,La Sierra,,LASIER,non-ncaa,la-sierra
+1185,langara-can,Langara (CAN),,,non-ncaa,langara-can
+1186,lawrence-tech,Lawrence Tech,,LAWRTC,non-ncaa,lawrence-tech
+1187,lethbridge-can,Lethbridge (CAN),,,non-ncaa,lethbridge-can
+1188,lewis-clark-st,Lewis-Clark St.,,LWCLST,non-ncaa,lewis-clark-st
+1189,life-ga,Life (GA),,,non-ncaa,life-ga
+1190,life-pacific,LIFE Pacific,,LPC,non-ncaa,life-pacific
+1191,lincoln-ca,Lincoln (CA),,,non-ncaa,lincoln-ca
+1192,lindsey-wilson,Lindsey Wilson,,LINWIL,non-ncaa,lindsey-wilson
+1193,louisiana-col,La. Christian,,,non-ncaa,louisiana-col
+1194,lourdes,Lourdes,,LOURDS,non-ncaa,lourdes
+1195,loyola-la,Loyola (LA),,LOY LA,non-ncaa,loyola-la
+1196,maharishi-intl,Maharishi Int'l,,,non-ncaa,maharishi-intl
+1197,maine-fort-kent,Me.-Fort Kent,,MNE FK,non-ncaa,maine-fort-kent
+1198,manhattan-chrst,Manhattan Chrst.,,,non-ncaa,manhattan-chrst
+1199,manor,Manor,,,non-ncaa,manor
+1200,martin-methodist,Tenn. Southern,,MARMET,non-ncaa,martin-methodist
+1201,mayville-st,Mayville St.,,MAYVLE,non-ncaa,mayville-st
+1202,mcpherson,McPherson,,,non-ncaa,mcpherson
+1203,me-augusta,Me.-Augusta,,,non-ncaa,me-augusta
+1204,metropolitana,Ana G. Méndez (PR),,,non-ncaa,metropolitana
+1205,miami-hamilton,Miami-Hamilton,,,non-ncaa,miami-hamilton
+1206,miami-middletown,Miami-Middletown,,,non-ncaa,miami-middletown
+1207,michigan-dearborn,Mich.-Dearborn,,MICHDE,non-ncaa,michigan-dearborn
+1208,mid-amer-christian,Mid-Amer. Christian,,,non-ncaa,mid-amer-christian
+1209,mid-atlantic-christ,Mid-Atlantic Christ.,,,non-ncaa,mid-atlantic-christ
+1210,midway,Midway,,,non-ncaa,midway
+1211,milligan,Milligan,,MILLIG,non-ncaa,milligan
+1212,missouri-valley,Missouri Valley,,MISVAL,non-ncaa,missouri-valley
+1213,mo-baptist,Mo. Baptist,,MOBAP,non-ncaa,mo-baptist
+1214,mobile,Mobile,,MOBILE,non-ncaa,mobile
+1215,montana-tech,Montana Tech,,MONTEC,non-ncaa,montana-tech
+1216,montana-western,Montana Western,,MONT W,non-ncaa,montana-western
+1217,montreat,Montreat,,MONTRE,non-ncaa,montreat
+1218,moody-bible,Moody Bible,,,non-ncaa,moody-bible
+1219,morris,Morris,,MORRIS,non-ncaa,morris
+1220,mt-marty,Mt. Marty,,,non-ncaa,mt-marty
+1221,andrew-ga,Andrew (GA),,,non-ncaa,name:andrew-ga
+1222,baptist-u-fl,Baptist U. (FL),,,non-ncaa,name:baptist-u-fl
+1223,beacon-col,Beacon Col.,,,non-ncaa,name:beacon-col
+1224,bismarck-st,Bismarck St.,,,non-ncaa,name:bismarck-st
+1225,bloomfield-col,Bloomfield Col.,,,non-ncaa,name:bloomfield-col
+1226,bry-strat-oh-uscaa,Bry. & Strat. (OH) USCAA,,,non-ncaa,name:bry-strat-oh-uscaa
+1227,cal-prestige,Cal Prestige,,,non-ncaa,name:cal-prestige
+1228,ga-southern-east,Ga. Southern-East,,,non-ncaa,name:ga-southern-east
+1229,hesston,Hesston,,,non-ncaa,name:hesston
+1230,interamericana-p-r,Interamericana (P.R.),,,non-ncaa,name:interamericana-p-r
+1231,kean-jersey-city,Kean Jersey City,,,non-ncaa,name:kean-jersey-city
+1232,lackawanna,Lackawanna,,,non-ncaa,name:lackawanna
+1233,monroe,Monroe,,,non-ncaa,name:monroe
+1234,nhsc,NHSC,,,non-ncaa,name:nhsc
+1235,northwest-indian,Northwest Indian,,,non-ncaa,name:northwest-indian
+1236,salish-kootenai,Salish-Kootenai,,,non-ncaa,name:salish-kootenai
+1237,shawnee-state,Shawnee State,,,non-ncaa,name:shawnee-state
+1238,south-fla-bible,South Fla. Bible,,,non-ncaa,name:south-fla-bible
+1239,st-boniface-can,St. Boniface (CAN),,,non-ncaa,name:st-boniface-can
+1240,texas-a-m-university-texarkana,Texas A&M University-Texarkana,,,non-ncaa,name:texas-a-m-university-texarkana
+1241,navajo-tech,Navajo Tech,,,non-ncaa,navajo-tech
+1242,new-college-fl,New College (FL),,,non-ncaa,new-college-fl
+1243,new-jersey-city,New Jersey City,,NJCU,non-ncaa,new-jersey-city
+1244,no-new-mexico,Northern N.M.,,NORNMX,non-ncaa,no-new-mexico
+1245,north-american,North American,,,non-ncaa,north-american
+1246,north-texas-dallas,UNT Dallas,,,non-ncaa,north-texas-dallas
+1247,northwest-chrst,Bushnell,,,non-ncaa,northwest-chrst
+1248,northwest-wa,Northwest (WA),,NWWASH,non-ncaa,northwest-wa
+1249,northwestern-ohio,Northwestern Ohio,,NWSTOH,non-ncaa,northwestern-ohio
+1250,oak-hills-christian,Oak Hills Christian,,,non-ncaa,oak-hills-christian
+1251,oakwood,Oakwood,,OAKWD,non-ncaa,oakwood
+1252,ohio-christian,Ohio Christian,,,non-ncaa,ohio-christian
+1253,okla-panhandle,Okla. Panhandle,,,non-ncaa,okla-panhandle
+1254,okla-sci-arts,Science & Arts Okla.,,,non-ncaa,okla-sci-arts
+1255,oklahoma-city,Oklahoma City,,,non-ncaa,oklahoma-city
+1256,ottawa,Ottawa (KS),,,non-ncaa,ottawa
+1257,ottawa-az,Ottawa (AZ),,,non-ncaa,ottawa-az
+1258,our-lady-of-the-lake,Our Lady of the Lake,,OLOTL,non-ncaa,our-lady-of-the-lake
+1259,ozark-christian,Ozark Christian,,,non-ncaa,ozark-christian
+1260,ozarks-mo,Ozarks (MO),,,non-ncaa,ozarks-mo
+1261,pacific-union,Pacific Union,,PUNION,non-ncaa,pacific-union
+1262,paine,Paine,,,non-ncaa,paine
+1263,park,Park (MO),,,non-ncaa,park
+1264,park-az,Park (AZ),,,non-ncaa,park-az
+1265,patrick-henry,Patrick Henry,,,non-ncaa,patrick-henry
+1266,paul-quinn,Paul Quinn,,PQUINN,non-ncaa,paul-quinn
+1267,paul-smith,Paul Smiths,,,non-ncaa,paul-smith
+1268,penn-st-beaver,Penn St.-Beaver,,PENBVR,non-ncaa,penn-st-beaver
+1269,penn-st-du-bois,Penn St.-Du Bois,,,non-ncaa,penn-st-du-bois
+1270,penn-st-fayette,Penn St.-Fayette,,,non-ncaa,penn-st-fayette
+1271,penn-st-gr-allegheny,Penn St.-Gr Allegheny,,,non-ncaa,penn-st-gr-allegheny
+1272,penn-st-hazleton,Penn St.-Hazleton,,,non-ncaa,penn-st-hazleton
+1273,penn-st-lehigh-val,Penn St.-Lehigh Val.,,,non-ncaa,penn-st-lehigh-val
+1274,penn-st-mont-alto,Penn St.-Mont Alto,,,non-ncaa,penn-st-mont-alto
+1275,penn-st-new-kens,Penn St.-New Kens.,,,non-ncaa,penn-st-new-kens
+1276,penn-st-schuylkill,Penn St.-Schuylkill,,,non-ncaa,penn-st-schuylkill
+1277,penn-st-scranton,Penn St.-Scranton,,,non-ncaa,penn-st-scranton
+1278,penn-st-shenango,Penn St.-Shenango,,,non-ncaa,penn-st-shenango
+1279,penn-st-york,Penn St.-York,,,non-ncaa,penn-st-york
+1280,pensacola-christian,Pensacola Christian,,PNSCHR,non-ncaa,pensacola-christian
+1281,peru-st,Peru St.,,PERUST,non-ncaa,peru-st
+1282,piedmont-intl,CarolinaU,,,non-ncaa,piedmont-intl
+1283,point-u,Point U.,,POINT,non-ncaa,point-u
+1284,providence-manitoba,Providence-Manitoba,,,non-ncaa,providence-manitoba
+1285,redeemer-ancas-can,Redeemer Ancas. (CAN),,,non-ncaa,redeemer-ancas-can
+1286,reinhardt,Reinhardt,,REINHA,non-ncaa,reinhardt
+1287,rochester-mi,Rochester Christian,,ROCHMI,non-ncaa,rochester-mi
+1288,rocky-mountain,Rocky Mountain,,,non-ncaa,rocky-mountain
+1289,rosemont,Rosemont,,ROSEMO,non-ncaa,rosemont
+1290,rust,Rust,,,non-ncaa,rust
+1291,selma,Selma,,SELMA,non-ncaa,selma
+1292,siena-heights,Siena Heights,,SNAHTS,non-ncaa,siena-heights
+1293,simmons-ky,Simmons (KY),,,non-ncaa,simmons-ky
+1294,simpson-ca,Simpson (CA),,,non-ncaa,simpson-ca
+1295,southeastern-bapt,Southeastern Bapt.,,,non-ncaa,southeastern-bapt
+1296,southern-no,Southern-N.O.,,SOU NO,non-ncaa,southern-no
+1297,southwest-adventist,S'western Adventist,,SWADVE,non-ncaa,southwest-adventist
+1298,southwestern-assemblies,Nelson,,,non-ncaa,southwestern-assemblies
+1299,southwestern-christian,Southwestern Christ.,,SWCRST,non-ncaa,southwestern-christian
+1300,southwestern-ks,Southwestern (KS),,,non-ncaa,southwestern-ks
+1301,spartanburg-meth,Spartanburg Meth.,,,non-ncaa,spartanburg-meth
+1302,spurgeon,Spurgeon,,,non-ncaa,spurgeon
+1303,st-ambrose,St. Ambrose,,,non-ncaa,st-ambrose
+1304,st-francis-il,St. Francis (IL),,,non-ncaa,st-francis-il
+1305,st-louis-pharmacy,UHSP,,,non-ncaa,st-louis-pharmacy
+1306,st-mary-woods,St. Mary-Woods,,,non-ncaa,st-mary-woods
+1307,st-thomas-fl,St. Thomas (FL),,,non-ncaa,st-thomas-fl
+1308,st-xavier,St. Xavier,,STXAV,non-ncaa,st-xavier
+1309,stanton,Stanton,,,non-ncaa,stanton
+1310,sterling-kan,Sterling (KS),,STRLNG,non-ncaa,sterling-kan
+1311,stillman,Stillman,,,non-ncaa,stillman
+1312,suny-esf,SUNY ESF,,,non-ncaa,suny-esf
+1313,tabor,Tabor,,TABOR,non-ncaa,tabor
+1314,talladega,Talladega,,TALLAD,non-ncaa,talladega
+1315,tamu-san-antonio,TAMU-San Antonio,,,non-ncaa,tamu-san-antonio
+1316,tba,TBA,,,non-ncaa,tba
+1317,tenn-wesleyan,Tenn. Wesleyan,,TN WES,non-ncaa,tenn-wesleyan
+1318,texas-college,Texas Col.,,TX COL,non-ncaa,texas-college
+1319,thomas-ga,Thomas (GA),,THOMGA,non-ncaa,thomas-ga
+1320,toccoa-falls,Toccoa Falls,,TOCCOA,non-ncaa,toccoa-falls
+1321,tougaloo,Tougaloo,,TOUGLO,non-ncaa,tougaloo
+1322,trinity-baptist,Trinity Baptist,,TRIBAP,non-ncaa,trinity-baptist
+1323,trinity-bible-nd,Trinity Bible (ND),,,non-ncaa,trinity-bible-nd
+1324,trinity-christian,Trinity Christian,,TRICHR,non-ncaa,trinity-christian
+1325,trinity-fl,Trinity (FL),,TRNFLA,non-ncaa,trinity-fl
+1326,truett-mcconnell,Truett-McConnell,,TRUETM,non-ncaa,truett-mcconnell
+1327,uc-clermont,UC Clermont,,,non-ncaa,uc-clermont
+1328,union-ky,Union Commonwealth,,UNIOKY,non-ncaa,union-ky
+1329,university-of-the-southwest,Southwest (NM),,UOFSW,non-ncaa,university-of-the-southwest
+1330,use-next,Oakland City,,,non-ncaa,use-next
+1331,valley-city-st,Valley City St.,,VALCST,non-ncaa,valley-city-st
+1332,valley-forge-chrst,Valley Forge,,VALFRG,non-ncaa,valley-forge-chrst
+1333,vermont-tech,VTSU Randolph,,,non-ncaa,vermont-tech
+1334,villa-maria,Villa Maria,,,non-ncaa,villa-maria
+1335,virgin-islands,Virgin Islands,,,non-ncaa,virgin-islands
+1336,virginia-lynchburg,Virginia-Lynchburg,,VA LYN,non-ncaa,virginia-lynchburg
+1337,viterbo,Viterbo,,VTRBO,non-ncaa,viterbo
+1338,voorhees,Voorhees,,,non-ncaa,voorhees
+1339,waldorf,Waldorf,,WALDRF,non-ncaa,waldorf
+1340,walla-walla,Walla Walla,,WALLA,non-ncaa,walla-walla
+1341,warner-pacific,Warner Pacific,,WARPAC,non-ncaa,warner-pacific
+1342,warner-southern,Warner,,WRNSOU,non-ncaa,warner-southern
+1343,washington-adventist,Washington Adventist,,,non-ncaa,washington-adventist
+1344,webber-intl,Webber Int'l,,WEBINT,non-ncaa,webber-intl
+1345,welch,Welch,,,non-ncaa,welch
+1346,west-all-stars,Nobel,,,non-ncaa,west-all-stars
+1347,west-coast-baptist,West Coast Baptist,,,non-ncaa,west-coast-baptist
+1348,west-va-tech,West Va. Tech,,,non-ncaa,west-va-tech
+1349,westcliff,Westcliff,,,non-ncaa,westcliff
+1350,wilberforce,Wilberforce,,WILBER,non-ncaa,wilberforce
+1351,wiley,Wiley,,WILEY,non-ncaa,wiley
+1352,william-carey,William Carey,,WCAREY,non-ncaa,william-carey
+1353,william-woods,William Woods,,WLWOOD,non-ncaa,william-woods
+1354,williams-baptist,Williams Baptist,,,non-ncaa,williams-baptist
+1355,wright-st-lake,Wright St.-Lake,,,non-ncaa,wright-st-lake
+1356,york-ne,York (NE),,,non-ncaa,york-ne
