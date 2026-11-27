@@ -150,7 +150,8 @@ def ingest_game(conn, client: NcaaClient, d: dt.date, gid: str, g: dict, divs: l
         for t in contest.get("teams") or []:
             side = "home" if t.get("isHome") else "away"
             tid = seo_to_id[side]
-            div = f"d{t['division']}" if t.get("division") else "non-ncaa"
+            # ncaa.com labels a few non-members with other numbers (e.g. 4); only 1-3 are NCAA.
+            div = f"d{t['division']}" if t.get("division") in (1, 2, 3) else "non-ncaa"
             cseo, cname = conf_by_seo[side]
             if div != "non-ncaa" and cseo:
                 conn.execute(
