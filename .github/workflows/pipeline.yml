@@ -1,0 +1,181 @@
+# Nightly data pipeline (DESIGN.md, "Operations").
+#
+#   * Scheduled: 09:17 and 15:17 UTC (4:17 / 10:17 a.m. ET in standard time) from November
+#     through early April; weekly (Mondays) the rest of the year.
+#   * Manual: mode=nightly runs the same job now; mode=load ingests a date range
+#     (initial load / backfill) and re-dispatches itself if it runs out of time.
+#
+# The SQLite database lives as a Release asset (db-latest, plus 14 dated backups in
+# db-backups); raw play-by-play is one gzipped bundle per day in pbp-<season>; the site's
+# JSON + CSV is force-pushed to the gh-pages branch and served by GitHub Pages.
+name: pipeline
+
+on:
+  schedule:
+    - cron: "17 9 * * *"
+    - cron: "17 15 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "nightly = last 3 days + schedule; load = a date range"
+        type: choice
+        options: [nightly, load]
+        default: nightly
+      start:
+        description: "load: first date (YYYY-MM-DD)"
+        type: string
+        default: ""
+      end:
+        description: "load: last date (YYYY-MM-DD)"
+        type: string
+        default: ""
+      allow_new_teams:
+        description: "Create unknown NCAA teams instead of failing (bootstrap only)"
+        type: boolean
+        default: false
+      schedule_refresh:
+        description: "nightly: force a full-season schedule refresh"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # push gh-pages, create/upload Release assets
+  actions: write    # a load run re-dispatches itself to continue a long backfill
+
+# One run at a time: every run reads and rewrites the same database file.
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    services:
+      ncaa-api:
+        # Self-hosted henrygd/ncaa-api (ncaa.com route pattern), pinned.
+        image: henrygd/ncaa-api:3.2.0
+        ports: ["3000:3000"]
+    env:
+      NCAA_API_BASE: http://localhost:3000
+      GH_TOKEN: ${{ github.token }}
+      MODE: ${{ inputs.mode || 'nightly' }}
+      START: ${{ inputs.start }}
+      END: ${{ inputs.end }}
+    steps:
+      - name: Off-season gate
+        id: gate
+        run: |
+          month=$(date -u +%-m); dow=$(date -u +%u); hour=$(date -u +%-H)
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$month" -ge 5 ] && [ "$month" -le 10 ] \
+             && ! { [ "$dow" = 1 ] && [ "$hour" -lt 12 ]; }; then
+            echo "Off-season: weekly runs only (Monday morning)."; echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: "3.12"
+
+      - name: Wait for ncaa-api
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf -o /dev/null "$NCAA_API_BASE/schedule/basketball-men/d1/2026/11"; then
+              echo "ncaa-api is up"; exit 0; fi
+            sleep 2
+          done
+          echo "ncaa-api did not respond"; exit 1
+
+      - name: Download database
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          mkdir -p work
+          if gh release download db-latest -p cbb.sqlite.gz -D work; then
+            gunzip -f work/cbb.sqlite.gz; ls -lh work/cbb.sqlite
+          else
+            echo "No database release yet: starting a fresh database."
+          fi
+
+      - name: Ingest
+        id: ingest
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          set +e
+          flags=""
+          [ "${{ inputs.allow_new_teams }}" = "true" ] && flags="$flags --allow-new-teams"
+          if [ "$MODE" = "load" ]; then
+            python -m pipeline load --start "$START" --end "$END" --time-budget-min 285 $flags
+          else
+            [ "${{ inputs.schedule_refresh }}" = "true" ] && flags="$flags --schedule-refresh"
+            python -m pipeline nightly $flags
+          fi
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "Ingest exit code: $code"
+
+      - name: Upload raw play-by-play bundles
+        if: always() && steps.ingest.outcome == 'success' && hashFiles('work/pbp/**') != ''
+        run: |
+          for dir in work/pbp/*/; do
+            sid=$(basename "$dir"); tag="pbp-$sid"
+            gh release view "$tag" >/dev/null 2>&1 || gh release create "$tag" --latest=false \
+              --title "Raw play-by-play $((sid-1))-${sid:2:2}" \
+              --notes "One gzipped JSON-lines file per date: {game_id, source, source_game_id, pbp}."
+            gh release upload "$tag" "$dir"*.jsonl.gz --clobber
+          done
+
+      - name: Upload database
+        if: always() && steps.ingest.outcome == 'success' && hashFiles('work/cbb.sqlite') != ''
+        run: |
+          gzip -kf work/cbb.sqlite
+          gh release view db-latest >/dev/null 2>&1 || gh release create db-latest --latest=false \
+            --title "Database (latest)" --notes "SQLite database, rewritten by every pipeline run."
+          gh release upload db-latest work/cbb.sqlite.gz --clobber
+          gh release view db-backups >/dev/null 2>&1 || gh release create db-backups --latest=false \
+            --title "Database backups" --notes "Daily database snapshots; the newest 14 are kept."
+          cp work/cbb.sqlite.gz "work/cbb-$(date -u +%F).sqlite.gz"
+          gh release upload db-backups "work/cbb-$(date -u +%F).sqlite.gz" --clobber
+          gh release view db-backups --json assets -q '.assets[].name' | sort | head -n -14 \
+            | while read -r old; do gh release delete-asset db-backups "$old" -y; done
+
+      - name: Publish JSON + CSV to gh-pages
+        if: always() && steps.ingest.outcome == 'success' && hashFiles('work/site/index.json') != ''
+        run: |
+          cd work/site
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Data $(date -u +%FT%TZ)"
+          git push -qf "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" gh-pages
+          echo "Published $(find . -type f -not -path './.git/*' | wc -l) files"
+
+      - name: Save run outputs
+        if: always() && steps.gate.outputs.run == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-${{ github.run_id }}
+          path: |
+            work/unmatched.csv
+            work/site/status.json
+          if-no-files-found: ignore
+
+      - name: Continue backfill
+        if: steps.ingest.outcome == 'success' && env.MODE == 'load' && hashFiles('work/next_start.txt') != ''
+        run: |
+          next=$(cat work/next_start.txt)
+          echo "Re-dispatching load from $next to $END"
+          gh workflow run pipeline.yml -f mode=load -f start="$next" -f end="$END" \
+            -f allow_new_teams=${{ inputs.allow_new_teams }}
+
+      - name: Fail on unmatched teams or low coverage
+        if: steps.ingest.outputs.code != '' && steps.ingest.outputs.code != '0'
+        run: |
+          echo "::error::Ingest exited ${{ steps.ingest.outputs.code }} (3 = unmatched NCAA teams, see unmatched.csv artifact; 4 = coverage below 90%)"
+          exit 1
