@@ -82,15 +82,26 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Wait for ncaa-api
+      - name: Wait for ncaa-api and probe ncaa.com through it
         if: steps.gate.outputs.run == 'true'
         run: |
           for i in $(seq 1 30); do
-            if curl -sf -o /dev/null "$NCAA_API_BASE/schedule/basketball-men/d1/2026/11"; then
-              echo "ncaa-api is up"; exit 0; fi
+            code=$(curl -s -o /dev/null -w '%{http_code}' "$NCAA_API_BASE/" || true)
+            [ "$code" != "000" ] && break
             sleep 2
           done
-          echo "ncaa-api did not respond"; exit 1
+          echo "ncaa-api answered HTTP $code on /"
+          ok=0
+          for path in "/scoreboard/basketball-men/d1/2026/11/18/all-conf" \
+                      "/game/6660932/boxscore" \
+                      "/schedule/basketball-men/d1/2026/11"; do
+            code=$(curl -s -o probe.out -w '%{http_code}' "$NCAA_API_BASE$path" || true)
+            echo "::group::HTTP $code  $path"; head -c 600 probe.out; echo; echo "::endgroup::"
+            [ "$path" = "/scoreboard/basketball-men/d1/2026/11/18/all-conf" ] && [ "$code" = "200" ] && ok=1
+          done
+          if [ "$ok" != 1 ]; then
+            echo "::error::ncaa.com scoreboard not reachable through the self-hosted ncaa-api"; exit 1
+          fi
 
       - name: Download database
         if: steps.gate.outputs.run == 'true'
