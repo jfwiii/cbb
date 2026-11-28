@@ -183,6 +183,11 @@ def build(conn: sqlite3.Connection, site: Path, sid: int, factor_result: dict) -
                                       for f in FACTORS + ("eff",)},
                               "def": {f: cell(split, "def", f, t, s["def"].get(f))
                                       for f in FACTORS + ("eff",)}}
+            so = ft[t]["splits"]["season"]["off"]
+            out["extra"] = {k: cell("season", "off", k, t, so.get(k))
+                            for k in ("tpar", "tp", "twop", "ft", "ast", "blk", "stl")}
+            out["extra"]["tempo"] = [r1(ft[t]["splits"]["season"]["tempo"]),
+                                     tempo_rk.get(t, (None,))[0], None]
             a = ft[t]["adjusted"]
             out["adjusted"] = {
                 "off": {f: cell("adjusted", "off", f, t, a["off"].get(f)) for f in FACTORS},

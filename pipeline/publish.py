@@ -238,7 +238,8 @@ def publish(conn: sqlite3.Connection, out: Path, factor_result: dict | None = No
         files += build(conn, site, max(seasons), factor_result)
 
     _csv(site / "csv/glossary.csv", ["Abbrev", "Name", "Definition"], GLOSSARY)
-    files.append("csv/glossary.csv")
+    _w(site / "glossary.json", {a: {"name": n, "def": d} for a, n, d in GLOSSARY})
+    files += ["csv/glossary.csv", "glossary.json"]
 
     _w(site / "status.json", status(conn, generated))
     files.append("status.json")
