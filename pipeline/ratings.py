@@ -81,6 +81,13 @@ def division_teams(conn, sid: int, div: str) -> list[int]:
         (sid, div))]
 
 
+def prior_date(conn, sid: int, div: str) -> str | None:
+    """Date of the last-season fit the prior comes from (None = no prior)."""
+    return conn.execute(
+        "SELECT MAX(date) FROM model_meta WHERE season_id=? AND division=? AND model_version=?",
+        (sid - 1, div, MODEL_VERSION)).fetchone()[0]
+
+
 def prior_for(conn, sid: int, div: str, teams: list[int]) -> dict[int, tuple[float, float, float]]:
     """(O, D, T) deviations to shrink toward: last season's final ratings, pulled toward the
     team's current conference mean. Empty when last season isn't rated."""
@@ -291,7 +298,9 @@ def run(conn: sqlite3.Connection, seasons: list[int] | None = None, recompute_da
             if sid == config.season_for(today) and today > last_game_day:
                 through_days.append(min(today, config.season_bounds(sid)[1]))
             # A stored fit is reusable only if it used the same settings and prior status.
-            setup = json.dumps({**asdict(P), "prior": bool(prior)})
+            # ...including which last-season fit the prior came from: when last season's data
+            # grows (e.g. a backfill finishes), every date of this season refits.
+            setup = json.dumps({**asdict(P), "prior": prior_date(conn, sid, div) if prior else None})
             done = {r[0] for r in conn.execute(
                 "SELECT date FROM model_meta WHERE season_id=? AND division=? AND model_version=? "
                 "AND params=?", (sid, div, MODEL_VERSION, setup))}
