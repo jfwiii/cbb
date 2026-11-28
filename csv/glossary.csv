@@ -1,0 +1,41 @@
+Abbrev,Name,Definition
+G,Games,Games played
+W · L,Wins · losses,"All games, including crossover and non-NCAA opponents"
+ORtg,Raw offensive rating,"Points scored per 100 possessions, unadjusted"
+DRtg,Raw defensive rating,"Points allowed per 100 possessions, unadjusted"
+Tempo,Raw tempo,"Possessions per 40 minutes, unadjusted"
+Poss,Possessions,FGA − OREB + TOV + 0.475 × FTA (a game's possessions average both teams)
+eFG%,Effective field goal %,(FGM + 0.5 × 3PM) / FGA
+TOV%,Turnover %,TOV / Poss
+ORB%,Offensive rebound %,OREB / (OREB + opponent DREB)
+FTr,Free throw rate,FTM / FGA
+3PAr,Three-point attempt rate,3PA / FGA
+3P% · 2P% · FT%,Shooting percentages,Makes / attempts
+AST%,Assist rate,AST / FGM
+TS%,True shooting %,PTS / (2 × (FGA + 0.44 × FTA))
+Opp,Opponent,Prefix: the same stat for the team's opponents (defense)
+Site,Site,"H home, A away, N neutral (neutral known for D1 games via ESPN)"
+Crossover,Crossover,1 when the teams are in different divisions or one is non-NCAA
+QualityOK,Quality OK,1 when the game passes box-score validation and counts toward ratings
+AdjEM,Adjusted efficiency margin,"AdjO − AdjD: points per 100 possessions better than an average team in the division, neutral court"
+AdjO,Adjusted offensive efficiency,Points scored per 100 possessions against an average division opponent
+AdjD,Adjusted defensive efficiency,Points allowed per 100 possessions against an average division opponent (lower is better)
+AdjT,Adjusted tempo,Possessions per 40 minutes against an average opponent
+SOS,Strength of schedule,"Average opponent AdjEM, in-division games"
+NCSOS,Nonconference SOS,"Average opponent AdjEM, nonconference in-division games"
+Luck,Luck,Actual wins − the sum of pregame win probabilities (in-division games)
+Rk,Rank,Rank by AdjEM within the division; hover for the 80% range
+Factor contribution,Points per 100 from each factor,(Team factor − division average) × that factor's regression weight; the eight add up to roughly AdjEM
+Watch,Watch Score,"0–100: 35% close game between good teams, 35% style extremes, 30% stakes"
+Win %,Win probability,"Pregame probability from the ratings, frozen before tip"
+Min%,Minutes %,Minutes / (team minutes ÷ 5)
+Player ORtg,Offensive rating (Oliver),Points produced per 100 possessions used
+Usg%,Usage,"Share of team possessions he uses (FGA, 0.475 × FTA, TOV) while on the floor"
+%Shots,Shot share,Share of team FGA while on the floor
+Floor%,Floor percentage (Oliver),Scoring possessions / possessions used
+DRB%,Defensive rebound %,Share of available defensive rebounds grabbed while on the floor
+Player AST%,Assist %,Share of teammates' FGM he assisted while on the floor
+Player TOV%,Turnover %,TOV / (FGA + 0.44 × FTA + TOV)
+BLK%,Block %,Blocks / opponent 2PA while on the floor
+STL%,Steal %,Steals / opponent possessions while on the floor
+FC/40,Fouls committed per 40,PF × 40 / minutes
