@@ -67,7 +67,7 @@ export default function Tonight() {
     <>
       <div className="sh">
         <div className="st">Tonight<BetaBadge /></div>
-        <div className="sd">Every D1, D2 and D3 game ranked by Watch Score: a close game between good teams (35%), style extremes (35%) and stakes (30%). No team is boosted.</div>
+        <div className="sd">Every D1, D2 and D3 game ranked by Watch Score: a close game between good teams (35%), style extremes (35%) and stakes (30%).</div>
       </div>
       <div className="datenav">
         <button className="fb" onClick={() => go(addDays(date, -1))}>◀ Prev</button>

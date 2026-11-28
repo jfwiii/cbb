@@ -66,7 +66,7 @@ export default function PlayerTable({ players, team }) {
   const Row = ({ p }) => (
     <tr>
       <td className="name sticky">{p.name}{p.no ? <span className="rk">#{p.no}</span> : null}</td>
-      <td className="tl muted">{(p.cls || "").slice(0, 2)}</td>
+      <td className="tl muted">{p.cls || ""}</td>
       <td className="tl muted">{p.pos || ""}</td>
       <td>{p.g}</td>
       {cols.map(([k]) => {

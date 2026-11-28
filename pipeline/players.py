@@ -14,6 +14,18 @@ STATS = ("fgm", "fga", "tpm", "tpa", "ftm", "fta", "oreb", "dreb", "ast", "stl",
          "pf", "pts")
 
 
+CLASS_ABBR = {"freshman": "Fr", "sophomore": "So", "junior": "Jr", "senior": "Sr",
+              "graduate": "Gr", "fr": "Fr", "so": "So", "jr": "Jr", "sr": "Sr", "gr": "Gr"}
+
+
+def class_abbr(c: str | None) -> str:
+    """'Junior' -> 'Jr' (ncaa.com spells classes out); unknown values pass through."""
+    if not c:
+        return ""
+    key = c.strip().lower().replace("redshirt", "").replace("r-", "").strip(" .-")
+    return CLASS_ABBR.get(key, c.strip())
+
+
 def _d(a, b):
     return a / b if b else 0.0
 
@@ -85,6 +97,7 @@ def season_players(conn: sqlite3.Connection, sid: int) -> dict[int, list[dict]]:
             WHERE gm.season_id=? GROUP BY pg.team_id, pg.player_id"""
     for r in conn.execute(q, (sid,)):
         p = dict(r)
+        p["class"] = class_abbr(p["class"])
         t, o = team[p["team_id"]], opp[p["team_id"]]
         MP, TmMP = p["min"], t["min"]
         f = (TmMP / 5) / MP if MP else 0     # on-floor scaling

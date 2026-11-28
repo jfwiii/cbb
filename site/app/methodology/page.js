@@ -7,7 +7,7 @@ const STEPS = [
   ["Early season", "Each team starts from last season's final rating, pulled toward its conference mean, and its own games take over as they accumulate. Older games count a little less, and runaway margins are down-weighted."],
   ["Predictions", "Possessions come from both teams' adjusted tempo, the margin from the AdjEM gap plus home court, and the win probability from a normal curve fit to each division. Predictions are frozen before tip."],
   ["Four factors", "eFG%, TOV%, ORB% and FTr (FTM / FGA), raw and opponent-adjusted. Each division gets its own weights from a regression of efficiency on the factors; they drive the 'where the margin comes from' chart."],
-  ["Watch Score", "35% a close game between good teams, 35% style extremes and notable pairings, 30% stakes (conference title odds for now; NCAA bids and seeds arrive with tournament mode). No team is boosted."],
+  ["Watch Score", "35% a close game between good teams, 35% style extremes and notable pairings, 30% stakes (conference title odds for now; NCAA bids and seeds arrive with tournament mode)."],
   ["Beta", "Settings are sensible defaults for now. A time-ordered backtest on 2024–25 and 2025–26 tunes them next, and the beta badge comes off once the ratings beat the baselines."],
 ];
 

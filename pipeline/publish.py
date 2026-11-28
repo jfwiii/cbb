@@ -15,6 +15,7 @@ from pathlib import Path
 
 from . import config
 from .glossary import GLOSSARY
+from .players import class_abbr
 
 LOGO = "https://www.ncaa.com/sites/default/files/images/logos/schools/bgl/{slug}.svg"
 
@@ -220,7 +221,7 @@ def publish(conn: sqlite3.Connection, out: Path, factor_result: dict | None = No
                 if p["team_id"] not in members:
                     continue
                 fga, fta = p["fga"] or 0, p["fta"] or 0
-                rows.append([p["name"], teams[p["team_id"]]["name"], p["class"] or "",
+                rows.append([p["name"], teams[p["team_id"]]["name"], class_abbr(p["class"]),
                              p["position"] or "", p["jersey"] or "", p["g"], p["gs"],
                              None if p["mins"] is None else round(p["mins"], 1),
                              p["pts"], p["fgm"], p["fga"], p["tpm"], p["tpa"], p["ftm"], p["fta"],
