@@ -31,7 +31,8 @@ def season_for(d: dt.date) -> int:
 
 
 def season_bounds(season_id: int) -> tuple[dt.date, dt.date]:
-    return dt.date(season_id - 1, 11, 1), dt.date(season_id, 4, 10)
+    # D2 can open in late October (e.g. Oct 30-31, 2026); D1 opens in early November.
+    return dt.date(season_id - 1, 10, 15), dt.date(season_id, 4, 10)
 
 
 def today_et() -> dt.date:
