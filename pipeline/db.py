@@ -141,21 +141,36 @@ CREATE TABLE IF NOT EXISTS game_quality (
   issues TEXT
 );
 
--- Phase 2+ tables (created now so the file layout is stable)
-CREATE TABLE IF NOT EXISTS ratings_daily (
-  team_id INTEGER, date TEXT, adj_o REAL, adj_d REAL, adj_em REAL, adj_t REAL,
-  rank_em INTEGER, sos REAL, ncsos REAL, luck REAL, se_em REAL, model_version TEXT,
+-- Phase 2+ tables
+CREATE TABLE IF NOT EXISTS model_meta (    -- one row per division fit ("through" date)
+  season_id INTEGER NOT NULL, division TEXT NOT NULL, date TEXT NOT NULL,
+  model_version TEXT NOT NULL,
+  mu REAL, h REAL, mu_t REAL, sigma REAL, n_games INTEGER, params TEXT,
+  factor_weights TEXT,                    -- JSON: four-factor regression weights
+  PRIMARY KEY (season_id, division, date, model_version)
+);
+CREATE TABLE IF NOT EXISTS ratings_daily ( -- ratings through `date` (games on or before it)
+  team_id INTEGER NOT NULL, date TEXT NOT NULL, model_version TEXT NOT NULL,
+  adj_o REAL, adj_d REAL, adj_em REAL, adj_t REAL,
+  rank_em INTEGER, rank_o INTEGER, rank_d INTEGER, rank_t INTEGER,
+  se_em REAL, rank_lo INTEGER, rank_hi INTEGER,   -- 80% rank range
+  games INTEGER,                          -- in-division games in the fit
+  sos REAL, ncsos REAL, luck REAL,
   PRIMARY KEY (team_id, date, model_version)
 );
+CREATE INDEX IF NOT EXISTS ratings_date ON ratings_daily(date, model_version);
 CREATE TABLE IF NOT EXISTS team_factors_daily (
-  team_id INTEGER, date TEXT, split TEXT, data TEXT, PRIMARY KEY (team_id, date, split)
+  team_id INTEGER NOT NULL, date TEXT NOT NULL, split TEXT NOT NULL, data TEXT,
+  PRIMARY KEY (team_id, date, split)
 );
-CREATE TABLE IF NOT EXISTS predictions (
-  game_id INTEGER, model_version TEXT, home_pts REAL, away_pts REAL, poss REAL,
-  home_win_prob REAL, created_at TEXT, PRIMARY KEY (game_id, model_version)
+CREATE TABLE IF NOT EXISTS predictions (   -- frozen before tip
+  game_id INTEGER NOT NULL, model_version TEXT NOT NULL,
+  home_pts REAL, away_pts REAL, poss REAL, home_win_prob REAL,
+  created_at TEXT, ratings_date TEXT,
+  PRIMARY KEY (game_id, model_version)
 );
 CREATE TABLE IF NOT EXISTS watch_scores (
-  game_id INTEGER PRIMARY KEY, score REAL, components TEXT, tags TEXT
+  game_id INTEGER PRIMARY KEY, score REAL, components TEXT, tags TEXT, computed_at TEXT
 );
 CREATE TABLE IF NOT EXISTS sim_runs (
   sim_id INTEGER PRIMARY KEY, kind TEXT, stage TEXT, created_at TEXT, n_runs INTEGER
@@ -181,10 +196,26 @@ CREATE TABLE IF NOT EXISTS ingest_runs (
 """
 
 
+def _columns(conn, table):
+    return {r[1] for r in conn.execute(f"PRAGMA table_info({table})")}
+
+
+def _migrate(conn: sqlite3.Connection) -> None:
+    """Phase 1 created placeholder Phase 2 tables with no data; rebuild them with the real
+    columns. Only ever drops tables that are still in their placeholder shape."""
+    tables = {r[0] for r in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+    if "ratings_daily" in tables and "rank_o" not in _columns(conn, "ratings_daily"):
+        for t in ("ratings_daily", "predictions", "watch_scores", "team_factors_daily"):
+            conn.execute(f"DROP TABLE IF EXISTS {t}")
+    elif "predictions" in tables and "ratings_date" not in _columns(conn, "predictions"):
+        conn.execute("DROP TABLE predictions")
+
+
 def connect(path: str | Path) -> sqlite3.Connection:
     if str(path) != ":memory:":
         Path(path).parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(path)
     conn.row_factory = sqlite3.Row
+    _migrate(conn)
     conn.executescript(SCHEMA)
     return conn

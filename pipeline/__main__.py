@@ -54,8 +54,27 @@ def schedule_dates(client: NcaaClient, start: dt.date, end: dt.date) -> list[dt.
     return sorted(d for d in dates if start <= d <= end)
 
 
+def analytics(conn, log_fn=None) -> dict:
+    """Phase 2: ratings, predictions, four factors and Watch Scores (current season)."""
+    from . import factors, ratings, watch
+    log_fn = log_fn or log
+    ratings.run(conn, log=log_fn)
+    sid = conn.execute("SELECT MAX(season_id) FROM games").fetchone()[0]
+    fr = factors.run(conn, sid, log=log_fn) if sid else {}
+    if sid:
+        watch.run(conn, sid, fr, log=log_fn)
+    return fr
+
+
 def finish(conn, f, st: RunState, args, mode: str, run_id: int, t0: float, w0, w1) -> int:
     finalize(conn, st.touched_seasons)
+    try:
+        fr = analytics(conn)
+    except Exception as e:  # ratings must never block ingest/publish of raw data
+        import traceback
+        traceback.print_exc()
+        st.errors.append(f"analytics failed: {type(e).__name__}: {e}")
+        fr = None
     bundles = write_pbp_bundles(st, Path(args.out) / "pbp")
     cov = coverage(st)
     low = [d for d, c in cov.items()
@@ -69,7 +88,7 @@ def finish(conn, f, st: RunState, args, mode: str, run_id: int, t0: float, w0, w
          json.dumps(sorted(st.unmatched)), json.dumps(st.errors), json.dumps(dict(f.stats)),
          round(time.time() - t0, 1), int(ok), run_id))
     conn.commit()
-    site = publish(conn, Path(args.out))
+    site = publish(conn, Path(args.out), fr)
     conn.execute("VACUUM")
     conn.close()
 
@@ -153,7 +172,8 @@ def cmd_load(args) -> int:
 
 def cmd_publish(args) -> int:
     conn = db.connect(args.db)
-    print(publish(conn, Path(args.out)))
+    fr = analytics(conn) if args.analytics else None
+    print(publish(conn, Path(args.out), fr))
     return 0
 
 
@@ -228,6 +248,7 @@ def main(argv=None) -> int:
 
     p = sub.add_parser("publish", help="rebuild site JSON + CSV only")
     common(p)
+    p.add_argument("--analytics", action="store_true", help="recompute ratings/factors/watch first")
     p.set_defaults(fn=cmd_publish)
 
     p = sub.add_parser("seed-teams", help="build data/teams.csv from scoreboards")

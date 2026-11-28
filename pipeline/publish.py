@@ -96,7 +96,7 @@ def team_season_stats(conn, sid):
     return out
 
 
-def publish(conn: sqlite3.Connection, out: Path) -> Path:
+def publish(conn: sqlite3.Connection, out: Path, factor_result: dict | None = None) -> Path:
     site = out / "site"
     if site.exists():
         shutil.rmtree(site)
@@ -232,6 +232,10 @@ def publish(conn: sqlite3.Connection, out: Path) -> Path:
                   "3PA", "FTM", "FTA", "OREB", "DREB", "AST", "STL", "BLK", "TOV", "PF", "eFG%",
                   "TS%"], rows)
             files += [f"csv/{sid}/{div}/{n}.csv" for n in ("teams", "games", "schedule", "players")]
+
+    if factor_result is not None and seasons:
+        from .site_data import build
+        files += build(conn, site, max(seasons), factor_result)
 
     _csv(site / "csv/glossary.csv", ["Abbrev", "Name", "Definition"], GLOSSARY)
     files.append("csv/glossary.csv")

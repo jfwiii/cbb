@@ -81,6 +81,11 @@ jobs:
         if: steps.gate.outputs.run == 'true'
         with:
           python-version: "3.12"
+          cache: pip
+
+      - name: Install Python dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: pip install -r requirements.txt
 
       - name: Wait for ncaa-api and probe ncaa.com through it
         if: steps.gate.outputs.run == 'true'
