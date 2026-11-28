@@ -41,6 +41,8 @@ class Fetcher:
 
         host = urllib.parse.urlsplit(url).netloc
         status, body, raw = None, None, None
+        # Retries: rate limits get a real wait; 5xx gets two quick retries. (ncaa.com's archive
+        # often answers 502 for old play-by-play; long backoffs once cost hours per backfill.)
         for attempt in range(5):
             wait = self.last_hit.get(host, 0) + self.min_interval - time.monotonic()
             if wait > 0:
@@ -60,14 +62,19 @@ class Fetcher:
             except urllib.error.HTTPError as e:
                 status = e.code
                 self.stats[f"http_{status}"] += 1
-                if status in (429, 500, 502, 503, 504):
+                if status == 429 and attempt < 4:
                     time.sleep(2 ** attempt * 2)
+                    continue
+                if status in (500, 502, 503, 504) and attempt < 2:
+                    time.sleep(1 + attempt)
                     continue
                 break
             except (urllib.error.URLError, TimeoutError, ConnectionError, OSError):
                 self.stats["net_error"] += 1
                 status = -2
-                time.sleep(2 ** attempt * 2)
+                if attempt >= 2:
+                    break
+                time.sleep(2 + 2 * attempt)
 
         if self.cache_dir and use_cache and status in (200, 404):
             p = self._cache_path(url)

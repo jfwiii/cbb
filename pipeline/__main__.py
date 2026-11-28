@@ -88,6 +88,13 @@ def finish(conn, f, st: RunState, args, mode: str, run_id: int, t0: float, w0, w
          json.dumps(sorted(st.unmatched)), json.dumps(st.errors), json.dumps(dict(f.stats)),
          round(time.time() - t0, 1), int(ok), run_id))
     conn.commit()
+    pending = conn.execute("SELECT value FROM kv WHERE key='backfill_next'").fetchone()
+    nf = Path(args.out) / "backfill_next.json"
+    nf.parent.mkdir(parents=True, exist_ok=True)
+    if pending:
+        nf.write_text(pending[0])
+    else:
+        nf.unlink(missing_ok=True)
     site = publish(conn, Path(args.out), fr)
     conn.execute("VACUUM")
     conn.close()
@@ -154,19 +161,27 @@ def cmd_load(args) -> int:
     dates = schedule_dates(client, a, b)
     log(f"load {a} -> {b}: {len(dates)} dates with games")
     last = a - dt.timedelta(days=1)
-    next_file = Path(args.out) / "next_start.txt"
-    next_file.unlink(missing_ok=True)
+    stopped = False
     for d in dates:
         if args.time_budget_min and (time.time() - t0) / 60 > args.time_budget_min:
-            next_file.parent.mkdir(parents=True, exist_ok=True)
-            next_file.write_text(d.isoformat())
+            conn.execute("INSERT OR REPLACE INTO kv (key, value) VALUES ('backfill_next', ?)",
+                         (json.dumps({"start": d.isoformat(), "end": b.isoformat()}),))
+            conn.commit()
             log(f"time budget reached; resume from {d}")
+            stopped = True
             break
         log(f"load {d}")
         ingest_date(conn, client, d, st, details=True)
         if not args.no_espn:
             enrich_espn(conn, f, d, st)
         last = d
+    if not stopped:
+        # Finished this range: clear the resume point only if it belongs to this backfill
+        # (a short separate load must not erase a pending long one).
+        row = conn.execute("SELECT value FROM kv WHERE key='backfill_next'").fetchone()
+        if row and json.loads(row[0]).get("end") == b.isoformat():
+            conn.execute("DELETE FROM kv WHERE key='backfill_next'")
+            conn.commit()
     return finish(conn, f, st, args, "load", run_id, t0, a, last)
 
 

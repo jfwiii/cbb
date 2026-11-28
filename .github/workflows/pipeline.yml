@@ -126,7 +126,7 @@ jobs:
           flags=""
           [ "${{ inputs.allow_new_teams }}" = "true" ] && flags="$flags --allow-new-teams"
           if [ "$MODE" = "load" ]; then
-            python -m pipeline load --start "$START" --end "$END" --time-budget-min 285 $flags
+            python -m pipeline load --start "$START" --end "$END" --time-budget-min 150 $flags
           else
             [ "${{ inputs.schedule_refresh }}" = "true" ] && flags="$flags --schedule-refresh"
             python -m pipeline nightly $flags
@@ -180,15 +180,27 @@ jobs:
           path: |
             work/unmatched.csv
             work/site/status.json
+            work/backfill_next.json
           if-no-files-found: ignore
 
       - name: Continue backfill
-        if: steps.ingest.outcome == 'success' && env.MODE == 'load' && hashFiles('work/next_start.txt') != ''
+        # A long load stops at its time budget and records where to resume (in the database,
+        # so a nightly run can pick it up too). Dispatch the next chunk only if no other
+        # pipeline run is waiting: GitHub cancels a waiting run when a newer one queues, and
+        # the scheduled nightly must never be the one cancelled. If a run is waiting, it
+        # resumes the backfill when it finishes.
+        if: steps.ingest.outcome == 'success' && hashFiles('work/backfill_next.json') != ''
         run: |
-          next=$(cat work/next_start.txt)
-          echo "Re-dispatching load from $next to $END"
-          gh workflow run pipeline.yml -f mode=load -f start="$next" -f end="$END" \
-            -f allow_new_teams=${{ inputs.allow_new_teams }}
+          start=$(python3 -c "import json;print(json.load(open('work/backfill_next.json'))['start'])")
+          end=$(python3 -c "import json;print(json.load(open('work/backfill_next.json'))['end'])")
+          waiting=$(gh run list --workflow pipeline.yml --json status,databaseId \
+            -q "[.[] | select(.status==\"queued\" or .status==\"pending\" or .status==\"waiting\") | select(.databaseId != ${{ github.run_id }})] | length")
+          if [ "$waiting" != "0" ]; then
+            echo "Another pipeline run is waiting; it will resume the backfill from $start."
+          else
+            echo "Re-dispatching load from $start to $end"
+            gh workflow run pipeline.yml -f mode=load -f start="$start" -f end="$end"
+          fi
 
       - name: Fail on unmatched teams or low coverage
         if: steps.ingest.outputs.code != '' && steps.ingest.outputs.code != '0'

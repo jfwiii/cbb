@@ -179,6 +179,10 @@ CREATE TABLE IF NOT EXISTS sim_team_results (
   sim_id INTEGER, team_id INTEGER, data TEXT, PRIMARY KEY (sim_id, team_id)
 );
 
+CREATE TABLE IF NOT EXISTS kv (            -- small pipeline state, e.g. a pending backfill
+  key TEXT PRIMARY KEY, value TEXT
+);
+
 CREATE TABLE IF NOT EXISTS ingest_runs (
   run_id INTEGER PRIMARY KEY,
   started_at TEXT NOT NULL, finished_at TEXT,
